@@ -95,7 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    color: #ffffff;
 }
 .product-link {
     display: block;
