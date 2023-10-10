@@ -140,6 +140,25 @@
   #amazon-best-sellers{
     padding-top: 15px;
   }
+  .best-sellers{
+    width: 93%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 1px #f89646;
+    color: #6bb7be;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 6px;   
+}
+.best-sellers:hover{
+    background-color: transparent;
+    color: #f89646;
+    border: solid 1px #6bb7be;  
+}
+.best-sellers:focus{
+    outline: none;
+}
 
 
   
