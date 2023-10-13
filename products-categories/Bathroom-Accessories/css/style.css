@@ -879,3 +879,220 @@ a:focus {
   color: yellow;
 }
 
+  .product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+/* .product-card:last-child {
+    margin-top: auto;
+} */
+
+
+/* Product Card Styles */
+.product-card {
+    width: calc(50% - 20px); /* Two columns in mobile view */
+    margin-bottom: 20px;
+    background-color: #080808;
+    -webkit-box-shadow: 0 0 10px 0 rgba(252, 2, 2, 0.8);
+            box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+ transform: scale(1.05); /* Add a hover effect */
+}
+
+@media screen and (min-width: 768px) {
+    .product-card {
+        width: calc(25% - 20px); /* Four columns in desktop view */
+    }
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    object-fit: cover;
+}
+.product-buy-button{
+    width: 93%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 1px #6bb7be;
+    color: #f89646;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 6px;   
+}
+.product-buy-button:hover{
+    background-color: transparent;
+    color: #6bb7be;
+    border: solid 1px #f89646;  
+}
+.product-buy-button:focus{
+    outline: none;
+}
+/* .product-info{
+    background-color: #6bb7be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.product-description {
+    margin: 0;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    color: #ffffff;
+}
+.product-description-sellers {
+    margin: 10px;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.product-link {
+    display: block;
+    text-align: center;
+    /* padding: 10px 0; */
+    text-decoration: none;
+    color: #000;
+}
+
+.all-collections-main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .all-collections{
+    /* width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #f89646;
+    color: #ffffff;
+    border-radius: 0;
+    border: 1px solid #f89646;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .all-collections:hover{
+    color: #f89646;
+    background-color: transparent
+  }
+
+.product_info_section .img-box img {
+  width: 100%;
+  height: auto;
+}
+
+.product_info_section .detail-box  {
+  margin-top: 9%;
+  /* margin-bottom: 35px; */
+}
+.product_info_section .buy-button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+/* .product_info_section .detail-box .product-link {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #6bb7be;
+  color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #6bb7be;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-align: center;
+  
+}
+
+.product_info_section .detail-box a:hover {
+  background-color: transparent;
+  color: #6bb7be;
+} */
+
+.glow-on-hover {
+  /* width: 220px;
+  height: 50px; */
+  display: inline-block;
+  padding: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+/* .glow-on-hover:hover:before {
+  opacity: 1;
+} */
+.glow-on-hover:before {
+  opacity: 1;
+}
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.glow-on-hover:focus{
+  outline: none;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
