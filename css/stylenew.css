@@ -118,25 +118,7 @@
     justify-content: center;
 
   }
-  .all-collections{
-    /* width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    display: inline-block;
-    padding: 10px 45px;
-    background-color: #f89646;
-    color: #ffffff;
-    border-radius: 0;
-    border: 1px solid #f89646;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-  }
-  .all-collections:hover{
-    color: #f89646;
-    background-color: transparent
-  }
+  
   #amazon-best-sellers{
     padding-top: 15px;
   }
