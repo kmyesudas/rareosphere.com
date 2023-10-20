@@ -282,6 +282,9 @@ a:focus {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
+.rareosphere-mention {
+  color: black;
+}
 
 .slider_section .detail-box .btn-box a:hover {
   background-color: transparent;
@@ -473,12 +476,12 @@ a:focus {
 
 .blog_section .box .detail-box .categories-box {
   display: inline-block;
-  color: red;
+  color: #000000;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.blog_section .box .detail-box a:hover {
+.blog_section .box .detail-box .view-collections-button:hover {
   background-color: transparent;
   color: red;
 }
@@ -960,7 +963,7 @@ a:focus {
   margin-top: 9%;
   /* margin-bottom: 35px; */
 }
-.product_info_section .buy-button {
+.product_info_section .buy-button, .amazon-disclosure {
  display: flex;
  align-items: center;
  justify-content: center;
