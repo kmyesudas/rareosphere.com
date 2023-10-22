@@ -1170,6 +1170,11 @@ transform: scale(1.05); /* Add a hover effect */
 }
 
 /* social media share button */
+.share-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #share-buttons {
   display: flex;
   align-items: center;
