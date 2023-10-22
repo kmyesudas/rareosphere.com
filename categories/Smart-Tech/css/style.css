@@ -1076,6 +1076,12 @@ transform: scale(1.05); /* Add a hover effect */
       width: calc(25% - 20px); /* Four columns in desktop view */
   }
 }
+@media (max-width: 359px) {
+  .product-card {
+      width: 100%;
+  }
+}
+
 
 .product-image {
   width: 100%;

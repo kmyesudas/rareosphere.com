@@ -212,6 +212,9 @@
   #share-buttons button  {
     padding: 8px 15px;
   }
+  .product_info_section .share-info{
+    padding: 20px;
+  }
 
 }
 
@@ -276,7 +279,13 @@
     padding: 5px;
   }
   #share-buttons button  {
-    padding: 8px 10px;
+    padding: 8px 7px;
+  }
+  
+}
+@media (max-width: 359px) {
+  .product-description {
+    height: 7em;
   }
 }
 
