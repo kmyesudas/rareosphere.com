@@ -1169,4 +1169,44 @@ transform: scale(1.05); /* Add a hover effect */
   outline: none;
 }
 
+/* social media share button */
+#share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  
+}
+#share-buttons button  {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+#facebook-share {
+  background-color: #3b5998;
+}
+#twitter-share {
+  background-color: #1da1f2;
+}
+#linkedin-share {
+  background-color: #0077b5;
+}
+#pinterest-share {
+  background-color: #bd081c;
+}
+#reddit-share {
+  background-color: #ff4500;
+}
+#whatsapp-share {
+  background-color: #25d366;
+}
+#telegram-share {
+  background-color: #1da1f2;
+}
+#copy-to-clipboard {
+  background-color: #020202;
+}
 
