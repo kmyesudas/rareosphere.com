@@ -64,6 +64,9 @@
     justify-content: space-between;
 
   }
+  #share-buttons button  {
+    padding: 15px 40px;
+  }
 
 
 }
@@ -159,6 +162,9 @@
   .info_section{
     margin-left: 25px;
   }
+  #share-buttons button  {
+    padding: 8px 30px;
+  }
 
 }
 
@@ -184,6 +190,9 @@
   .blog_section{
     padding: 7px;
   }
+  #share-buttons button  {
+    padding: 8px 20px;
+  }
 
 }
 
@@ -200,7 +209,9 @@
   .blog_section{
     padding: 5px;
   }
-
+  #share-buttons button  {
+    padding: 8px 15px;
+  }
 
 }
 
@@ -263,6 +274,9 @@
   }
   .blog_section{
     padding: 5px;
+  }
+  #share-buttons button  {
+    padding: 8px 10px;
   }
 }
 

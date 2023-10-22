@@ -967,6 +967,7 @@ a:focus {
  display: flex;
  align-items: center;
  justify-content: center;
+ text-align: center;
 }
 
 .glow-on-hover {
@@ -1174,12 +1175,16 @@ transform: scale(1.05); /* Add a hover effect */
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #share-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 7px;
+  padding: 15px;
   
 }
 #share-buttons button  {
@@ -1187,8 +1192,10 @@ transform: scale(1.05); /* Add a hover effect */
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
-  padding: 8px 16px;
+  padding: 15px 40px;
+}
+#share-buttons button:focus{
+  outline: none;
 }
 #facebook-share {
   background-color: #3b5998;
