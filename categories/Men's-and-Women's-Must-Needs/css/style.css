@@ -788,6 +788,9 @@ a:focus {
   max-width: 300%;
   max-height: 300%;
 }
+.info_section .info_post .post_box .img-box img:hover {
+  opacity: 0.6;
+}
 
 .info_section .info_post .post_box p {
   margin: 0;
