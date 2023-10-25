@@ -32,12 +32,12 @@ function shareOnTelegram() {
 }
 
 // Function to share on Pinterest
-// function shareOnPinterest() {
-//     var url = encodeURIComponent(window.location.href);
-//     var image = encodeURIComponent('URL_TO_YOUR_IMAGE');
-//     var description = encodeURIComponent('Description of your image');
-//     window.open('https://www.pinterest.com/pin/create/button/?url=' + url + '&media=' + image + '&description=' + description, 'Share on Pinterest', 'width=600, height=400');
-// }
+function shareOnPinterest() {
+    var url = encodeURIComponent(window.location.href);
+    var image = encodeURIComponent('URL_TO_YOUR_IMAGE');
+    var description = encodeURIComponent('Description of your image');
+    window.open('https://www.pinterest.com/pin/create/button/?url=' + url + '&media=' + image + '&description=' + description, 'Share on Pinterest');
+}
 
 // Function to share on Reddit
 // function shareOnReddit() {
@@ -55,7 +55,7 @@ function copyToClipboard() {
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);
-    alert("URL copied to clipboard: " + url);
+    alert("URL Copied Share It Now");
 }
 
 // Attach click event handlers to the share buttons and copy button
@@ -64,6 +64,6 @@ document.getElementById('twitter-share').addEventListener('click', shareOnTwitte
 document.getElementById('linkedin-share').addEventListener('click', shareOnLinkedIn);
 document.getElementById('whatsapp-share').addEventListener('click', shareOnWhatsApp);
 document.getElementById('telegram-share').addEventListener('click', shareOnTelegram);
-// document.getElementById('pinterest-share').addEventListener('click', shareOnPinterest);
+document.getElementById('pinterest-share').addEventListener('click', shareOnPinterest);
 // document.getElementById('reddit-share').addEventListener('click', shareOnReddit);
 document.getElementById('copy-to-clipboard').addEventListener('click', copyToClipboard);
