@@ -289,6 +289,10 @@
   #share-buttons button  {
     padding: 5px 5px;
   }
+  .info_section .info_post .post_box .img-box img {
+    max-width: 200%;
+    max-height: 200%;
+  }
 }
 
 @media (min-width: 1200px) {
