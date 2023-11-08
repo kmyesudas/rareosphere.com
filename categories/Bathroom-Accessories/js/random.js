@@ -10,10 +10,10 @@ function getRandomIndices(array, count) {
 }
 
 function displayRandomCards(productData) {
-    const productContainer = document.getElementById('product-container-2');
+    const productContainer = document.getElementById('product-container');
     productContainer.innerHTML = '';
 
-    const randomIndices = getRandomIndices(productData, 4);
+    const randomIndices = getRandomIndices(productData, 8);
     randomIndices.forEach(index => {
         const card = document.createElement('div');
         card.className = 'product-card';
@@ -23,7 +23,7 @@ function displayRandomCards(productData) {
 }
 
 // Fetch data from the remote server
-fetch('https://rareosphere.com/database-2.html')
+fetch('https://rareosphere.com/database.html')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -50,7 +50,7 @@ fetch('https://rareosphere.com/database-2.html')
 
 // Refresh every 5 minutes
 setInterval(() => {
-    fetch('https://rareosphere.com/database-2.html')
+    fetch('https://rareosphere.com/database.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -74,4 +74,4 @@ setInterval(() => {
         .catch(error => {
             console.error('Error:', error);
         });
-}, 3 * 60 * 1000);
+}, 2 * 60 * 1000);

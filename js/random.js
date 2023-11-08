@@ -13,7 +13,7 @@ function displayRandomCards(productData) {
     const productContainer = document.getElementById('product-container');
     productContainer.innerHTML = '';
 
-    const randomIndices = getRandomIndices(productData, 4);
+    const randomIndices = getRandomIndices(productData, 8);
     randomIndices.forEach(index => {
         const card = document.createElement('div');
         card.className = 'product-card';
