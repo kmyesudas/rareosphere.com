@@ -1,9 +1,9 @@
 function getRandomIndices(array, count) {
     const indices = [];
     while (indices.length < count) {
-        const index = Math.floor(Math.random() * array.length);
-        if (!indices.includes(index)) {
-            indices.push(index);
+        const database = Math.floor(Math.random() * array.length);
+        if (!indices.includes(database)) {
+            indices.push(database);
         }
     }
     return indices;
@@ -15,10 +15,10 @@ function displayRandomCards() {
     productContainer.innerHTML = '';
 
     const randomIndices = getRandomIndices(productData, 4);
-    randomIndices.forEach(index => {
+    randomIndices.forEach(database => {
         const card = document.createElement('div');
         card.className = 'product-card-random';
-        card.innerHTML = productData[index];
+        card.innerHTML = productData[database];
         productContainer.appendChild(card);
     });
 }
