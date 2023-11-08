@@ -9,15 +9,7 @@ function getRandomIndices(array, count) {
     return indices;
 }
 
-function displayRandomCards() {
-    // Retrieve product data from local storage
-    const productData = JSON.parse(localStorage.getItem('productData'));
-
-    if (!productData) {
-        console.log('No product data found in local storage.');
-        return;
-    }
-
+function displayRandomCards(productData) {
     const productContainer = document.getElementById('product-container');
     productContainer.innerHTML = '';
 
@@ -30,10 +22,56 @@ function displayRandomCards() {
     });
 }
 
-// Initial display
-displayRandomCards();
+// Fetch data from the remote server
+fetch('https://rareosphere.com/database.html')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        // Assuming the response is in HTML format; adjust as needed
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
+        const productCards = Array.from(doc.querySelectorAll('.product-card'));
+
+        if (productCards.length === 0) {
+            console.log('No product data found on the remote page.');
+            return;
+        }
+
+        const productData = productCards.map(card => card.innerHTML);
+        displayRandomCards(productData);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 
 // Refresh every 5 minutes
 setInterval(() => {
-    displayRandomCards();
+    fetch('https://rareosphere.com/database.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Assuming the response is in HTML format; adjust as needed
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+            const productCards = Array.from(doc.querySelectorAll('.product-card'));
+
+            if (productCards.length === 0) {
+                console.log('No product data found on the remote page.');
+                return;
+            }
+
+            const productData = productCards.map(card => card.innerHTML);
+            displayRandomCards(productData);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 }, 5 * 60 * 1000);
