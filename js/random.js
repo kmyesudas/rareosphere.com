@@ -24,7 +24,7 @@ function displayRandomCards() {
     const randomIndices = getRandomIndices(productData, 4);
     randomIndices.forEach(index => {
         const card = document.createElement('div');
-        card.className = 'product-card';
+        card.className = 'product-card-random';
         card.innerHTML = productData[index];
         productContainer.appendChild(card);
     });
