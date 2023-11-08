@@ -1529,6 +1529,16 @@ a:focus {
   color: orange;
 }
 
+.header_section .search-link{
+  padding-right: 10px;
+  color: #000;
+  
+}
+.header_section i:hover{
+  color: red;
+}
+/* Product Card Search Styles end */
+
 /* product random show style */
 
 #product-container {
@@ -1541,8 +1551,6 @@ a:focus {
 
 }
 
-
-/* Product Card Search Styles */
 .product-card {
   width: calc(50% - 20px);
   /* Two columns in mobile view */
@@ -1583,4 +1591,7 @@ a:focus {
   object-fit: cover;
 }
 
-/* product random show */
+
+
+
+
