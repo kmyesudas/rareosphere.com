@@ -270,15 +270,19 @@ a:focus {
   margin: 0 -5px;
 }
 
-.slider_section .detail-box .btn-box a {
-  margin: 5px;
+.slider_section .detail-box .btn-box{
+  /* margin: 5px;
+  width: 165px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 165px;
 }
+
 
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 50px;
   background-color: #f89646;
   color: #ffffff;
   border-radius: 0;
@@ -290,6 +294,9 @@ a:focus {
 .rareosphere-mention {
   color: black;
 }
+.rareosphere-mention:hover {
+  color: red;
+}
 
 .slider_section .detail-box .btn-box .btn1:hover {
   background-color: transparent;
@@ -298,7 +305,7 @@ a:focus {
 
 .slider_section .detail-box .btn-box .btn2 {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 50px;
   background-color: #6bb7be;
   color: #ffffff;
   border-radius: 0;
@@ -1414,3 +1421,177 @@ a:focus {
   background-color: transparent;
   color: #6bb7be;
 } */
+
+
+/* Product card Search button Styles */
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+/* Product Card Search Styles */
+.product-card-search {
+  display: none;
+  width: calc(50% - 20px);
+  /* Two columns in mobile view */
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  /* border: solid 1px;
+  border-color: #ffffff; */
+  -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.5);
+  box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card-search:hover {
+  transform: scale(1.03);
+  /* Add a hover effect */
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .product-card-search {
+    width: calc(25% - 20px);
+    /* Four columns in desktop view */
+  }
+}
+
+@media (max-width: 359px) {
+  .product-card-search {
+    width: 100%;
+  }
+}
+
+
+.product-image {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  object-fit: cover;
+}
+.search_section .all-collections-main a:hover {
+  background-color: transparent;
+  color: #f7fafa;
+  font-weight: bold;
+}
+
+.search_section #search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  
+}
+.search_section h5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#search-input {
+  flex: 1;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.5);
+  box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.5);
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* #search-button {
+  padding: 5px 10px;
+  cursor: pointer;
+} */
+
+/* .product-card {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+} */
+
+#no-results-message {
+  display: none;
+  color: red;
+}
+
+#empty-search-warning {
+  display: none;
+  color: orange;
+}
+
+.header_section .search-link{
+  padding-right: 10px;
+  color: #000;
+  
+}
+.header_section i:hover{
+  color: red;
+}
+/* Product Card Search Styles end */
+
+/* product random show style */
+
+#product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.product-card {
+  width: calc(50% - 20px);
+  /* Two columns in mobile view */
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  /* border: solid 1px;
+  border-color: #ffffff; */
+  -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.5);
+  box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  /* Add a hover effect */
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .product-card {
+    width: calc(25% - 20px);
+    /* Four columns in desktop view */
+  }
+}
+
+@media (max-width: 359px) {
+  .product-card {
+    width: 100%;
+  }
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  object-fit: cover;
+}
+
+
+
+
+

@@ -65,6 +65,9 @@
   #share-buttons button  {
     padding: 15px 40px;
   }
+  .logo {
+    margin-right: 350px;
+  }
 
 
 }
@@ -163,6 +166,9 @@
   #share-buttons button  {
     padding: 8px 30px;
   }
+.logo {
+  margin-right: 200px;
+}
 
 }
 
@@ -191,6 +197,9 @@
   #share-buttons button  {
     padding: 8px 20px;
   }
+  .logo {
+    margin-right: 120px;
+  }
 
 }
 
@@ -212,6 +221,9 @@
   }
   .product_info_section .share-info{
     padding: 20px;
+  }
+  .logo {
+    margin-right: 50px;
   }
 
 }
@@ -249,6 +261,9 @@
   .blog_section{
     padding: 5px;
   }
+  .logo {
+    margin-right: 30px;
+  }
   
 }
 
@@ -284,6 +299,9 @@
   .product-description {
     height: 7em;
   }
+  .logo {
+    margin-right: 10px;
+  }
 }
 @media (max-width: 299px) {
   #share-buttons button  {
@@ -293,6 +311,8 @@
     max-width: 200%;
     max-height: 200%;
   }
+  
+  
 }
 
 @media (min-width: 1200px) {
@@ -313,5 +333,7 @@
   .header_section{
     margin: 0;
   }
-  
+  .header_section .search-link{
+    display: none;
+  }
 }
