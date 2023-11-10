@@ -1,7 +1,7 @@
 
     const searchInput = document.getElementById('search-input');
     // const searchButton = document.getElementById('search-button');
-    const productCards = document.querySelectorAll('.product-card-search');
+    const productCards = document.querySelectorAll('.product-card');
     const noResultsMessage = document.getElementById('no-results-message');
     const emptySearchWarning = document.getElementById('empty-search-warning');
 
