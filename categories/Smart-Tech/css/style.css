@@ -1457,7 +1457,7 @@ a:focus {
 
 #search-input {
   flex: 1;
-  padding: 10px;
+  padding: 8px;
   -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.5);
   box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.5);
   border-radius: 10px;
@@ -1469,11 +1469,23 @@ a:focus {
   box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.9);
 }
 
-/* #search-button {
-  padding: 5px 10px;
+#search-button {
+  padding: 8px 15px;
+  margin-left: 10px;
   cursor: pointer;
-} */
+  -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.5);
+  box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.5);
+  border-radius: 10px;
+  border: none;
+}
+#search-button:hover{
+  -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.9);
+  box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.9);
 
+}
+#search-button:focus{
+  outline: none;
+}
 #no-results-message {
   display: none;
   color: red;

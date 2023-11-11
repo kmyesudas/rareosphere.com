@@ -1,6 +1,6 @@
 
     const searchInput = document.getElementById('search-input');
-    // const searchButton = document.getElementById('search-button');
+    const searchButton = document.getElementById('search-button');
     const productCards = document.querySelectorAll('.product-card');
     const noResultsMessage = document.getElementById('no-results-message');
     const emptySearchWarning = document.getElementById('empty-search-warning');
@@ -38,7 +38,7 @@
             }
         }
 
-        // searchButton.addEventListener('click', performSearch);
+        searchButton.addEventListener('click', performSearch);
 
         searchInput.addEventListener('input', performSearch);
 

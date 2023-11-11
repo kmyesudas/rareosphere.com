@@ -311,6 +311,9 @@
     max-width: 200%;
     max-height: 200%;
   }
+  #search-button{
+    display: none;
+  }
   
   
 }
