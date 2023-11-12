@@ -68,6 +68,12 @@
   .logo {
     margin-right: 350px;
   }
+  .footer_section p {
+    padding: 0 20px;
+  }
+  .footer_section p {
+    padding-bottom: 25px;
+  }
 
 
 }

@@ -887,8 +887,7 @@ a:focus {
 
 .footer_section p {
   color: #000000;
-  padding-bottom: 15px;
-  /* margin: 0; */
+  padding: 20px;
 }
 
 .footer_section p a {
