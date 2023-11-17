@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Database</title>
+    <!-- Custom styles  -->
+  <link href="css/style.css" rel="stylesheet" />
+  
+  
+</head>
+<body>
+ 
+
+  
+
+
+<!-- Product Card  -->
+<div class="product-card">
+  <a class="product-link" href="https://rareosphere.com/categories/Ladies-Products/heated-eyelash-curlers">
+      <img class="product-image" src="https://rareosphere.s3.ap-south-1.amazonaws.com/products/Rechargeable+Electric+Eyelash+Curler.jpg" alt="Product ">
+      <p class="product-description">Heated Eyelash Curler, Rechargeable Electric Eyelash Curler for Women</p>
+  </a>
+</div>
+
+<!-- Product Card  -->
+<div class="product-card">
+  <a class="product-link" href="https://rareosphere.com/categories/Home-Office-Decor/musical-rope-climbing-santa-claus">
+      <img class="product-image" src="https://rareosphere.s3.ap-south-1.amazonaws.com/products/Musical+Rope+Climbing+Santa+Claus.jpg" alt="Product">
+      <p class="product-description">Musical Rope Climbing Santa Claus on Ladder with Lights | Perfect Decor and Gift for Christmas</p>
+  </a>
+</div>
+<!-- Product Card  -->
+<div class="product-card">
+  <a class="product-link" href="https://rareosphere.com/categories/Home-Office-Decor/magic-growing-crystal-christmas-tree">
+      <img class="product-image" src="https://rareosphere.s3.ap-south-1.amazonaws.com/products/Magic+Growing+Crystal+Christmas+Tree.jpg" alt="Product ">
+      <p class="product-description">Magic Growing Crystal Christmas Tree</p>
+  </a>
+</div>
+<!-- Product Card 1 -->
+<div class="product-card">
+  <a class="product-link" href="https://rareosphere.com/categories/Kitchen-Accessories/6-grid-rotating-grain-rice-dispenser">
+      <img class="product-image" src="https://rareosphere.s3.ap-south-1.amazonaws.com/products/6-Grid+Rotating+Grain+Rice+Dispenser.jpg" alt="Product 1">
+      <p class="product-description">6-Grid Rotating Grain Rice Dispenser with Measuring Cup</p>
+  </a>
+</div>
+
+  
+
+
+
+
+
+
+
+  <script>
+    // Store product data in local storage
+    const productCards = document.querySelectorAll('.product-card');
+    const productData = Array.from(productCards).map(card => card.innerHTML);
+    localStorage.setItem('productData', JSON.stringify(productData));
+</script>
+</body>
+</html>
