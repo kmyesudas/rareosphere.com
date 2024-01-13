@@ -258,6 +258,12 @@ a:focus {
   text-transform: uppercase;
   margin-bottom: 0;
 }
+.slider_section .detail-box h2 {
+  font-weight: bold;
+font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
 
 .slider_section .detail-box p {
   margin: 25px 0;
