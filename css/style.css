@@ -438,7 +438,9 @@ font-size: 40px;
 }
 
 .about_section .detail-box .about-contact-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 45px;
   background-color: #6bb7be;
   color: #ffffff;
