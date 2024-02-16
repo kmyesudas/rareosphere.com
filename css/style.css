@@ -57,6 +57,13 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+.heading_container h1 {
+  position: relative;
+  font-weight: bold;
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 /*header section*/
 .hero_area {
@@ -258,12 +265,6 @@ a:focus {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.slider_section .detail-box h2 {
-  font-weight: bold;
-font-size: 40px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
 
 .slider_section .detail-box p {
   margin: 25px 0;
@@ -438,9 +439,7 @@ font-size: 40px;
 }
 
 .about_section .detail-box .about-contact-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   padding: 10px 45px;
   background-color: #6bb7be;
   color: #ffffff;
@@ -466,6 +465,12 @@ font-size: 40px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.product_category_section .heading_container h1::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 
 /* Product category section*/
 
@@ -888,18 +893,36 @@ font-size: 40px;
 }
 
 /* footer section*/
+
 .footer_section {
-  position: relative;
+  padding: 20px;
   text-align: center;
 }
-
 .footer_section p {
   color: #000000;
   padding: 20px;
 }
-
 .footer_section p a {
   color: inherit;
+}
+.footer_section a:hover {
+  color: #f89646;
+}
+.copyright, .developer {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+  }
+
+  .developer {
+      margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -1340,6 +1363,12 @@ font-size: 40px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.blog_section .heading_container h1::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 
 .blog_section .box {
   margin-top: 55px;
