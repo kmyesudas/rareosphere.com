@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /database.html
+Sitemap: https://rareosphere.com/sitemap.xml
