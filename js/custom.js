@@ -25,3 +25,17 @@ window.addEventListener('scroll', () => {
   lastScrollTop = scrollTop;
 });
 
+ // Function to translate the page using Google Translate API
+ function translatePage() {
+  var languageSelect = document.getElementById('language-select');
+  var selectedLanguage = languageSelect.value;
+
+  // Invoke Google Translate API to translate the content
+  googleTranslateElementInit(selectedLanguage);
+}
+
+// Callback function for Google Translate API
+function googleTranslateElementInit(selectedLanguage) {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: selectedLanguage}, 'google_translate_element');
+}
+

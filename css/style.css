@@ -1541,3 +1541,22 @@ a:focus {
 }
 /* Product Card Search Styles end */
 
+ /* Custom styles for the Google Translate dropdown */
+        .goog-te-combo {
+            background-color: #fff; /* Background color */
+            border: 1px solid #000000; /* Border */
+            border-radius: 4px; /* Rounded corners */
+            padding: 5px; /* Padding */
+            font-family: Arial, sans-serif; /* Font family */
+            font-size: 14px; /* Font size */
+            color: #000000; /* Text color */
+            appearance: none; /* Remove default appearance */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        
+        .google-translate{
+          display: flex;
+          justify-content: end;
+          padding-right: 20px;
+        }
