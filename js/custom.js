@@ -39,3 +39,21 @@ function googleTranslateElementInit(selectedLanguage) {
   new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: selectedLanguage}, 'google_translate_element');
 }
 
+//function to hide video controls
+
+const video = document.getElementById('myVideo');
+
+// Prevent the context menu from showing on right-click
+video.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
+// Prevent unmuted audio when the video is clicked
+video.addEventListener('click', function(event) {
+  if (!video.muted) {
+    event.preventDefault(); // Prevent the default behavior
+    video.muted = true; // Ensure the video stays muted
+  }
+});
+
+

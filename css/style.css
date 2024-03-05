@@ -6,7 +6,7 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .layout_padding2 {
@@ -22,11 +22,11 @@ body {
 }
 
 .layout_padding-top {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 .layout_padding-bottom {
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .long_section {
@@ -1022,6 +1022,15 @@ a:focus {
 .product_info_section .img-box img {
   width: 100%;
   height: auto;
+}
+
+/* Hide default video controls */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
 }
 
 .product_info_section .detail-box {
