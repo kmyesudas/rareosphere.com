@@ -9,12 +9,12 @@
 
 <url>
   <loc>https://rareosphere.com/</loc>
-  <lastmod>2024-03-04T14:22:04+00:00</lastmod>
+  <lastmod>2024-03-05T11:10:36+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://rareosphere.com/search-products</loc>
-  <lastmod>2024-03-04T11:15:48+00:00</lastmod>
+  <lastmod>2024-03-05T10:40:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -38,18 +38,23 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://rareosphere.com/categories/kids-and-babies/automatic-electric-baby-swing-cradle</loc>
+  <lastmod>2024-03-05T11:00:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://rareosphere.com/categories/home-improvement-gadgets/portable-wardrobe-closet-storage-organizer-plastic-wardrobe-with-magnetic-transparent-door</loc>
-  <lastmod>2024-03-03T19:44:16+00:00</lastmod>
+  <lastmod>2024-03-05T12:23:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rareosphere.com/categories/home-improvement-gadgets/vanity-desk-with-flip-top-mirror-lights-and-stool</loc>
-  <lastmod>2024-03-03T03:22:30+00:00</lastmod>
+  <lastmod>2024-03-05T11:09:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kitchen-accessories/wall-mount-oil-and-vinegar-storage-dispenser-multi-compartment-rack-organizer</loc>
-  <lastmod>2024-03-04T04:20:20+00:00</lastmod>
+  <lastmod>2024-03-05T12:16:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -69,12 +74,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/home-office-decor/humidifier-for-home-cloud-rain-diffuser-snuggle-cloud-light-humidifier</loc>
-  <lastmod>2024-03-03T19:57:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rareosphere.com/categories/smart-tech/portable-electric-lint-remover-for-clothing-fuzz-remover-fabric-shaver</loc>
-  <lastmod>2024-03-04T04:50:12+00:00</lastmod>
+  <lastmod>2024-03-05T15:17:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -133,8 +133,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rareosphere.com/categories/home-improvement-gadgets/floor-spin-mop-and-bucket-set-with-wringer-system-extended-stainless-steel-handle</loc>
-  <lastmod>2024-03-03T16:16:40+00:00</lastmod>
+  <loc>https://rareosphere.com/categories/smart-tech/portable-electric-lint-remover-for-clothing-fuzz-remover-fabric-shaver</loc>
+  <lastmod>2024-03-04T04:50:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -254,7 +254,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/daily-life-hack/queen-ultra-plush-fiber-tech-airbed-air-mattress-bed-with-built-in-pump</loc>
-  <lastmod>2024-03-03T15:06:50+00:00</lastmod>
+  <lastmod>2024-03-05T15:23:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -274,12 +274,12 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/daily-life-hack/automatic-magnetic-stirring-coffee-mug-rotating-home-office-travel-mixing-cup</loc>
-  <lastmod>2024-03-03T04:20:40+00:00</lastmod>
+  <lastmod>2024-03-05T12:21:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rareosphere.com/categories/daily-life-hack/manual-steel-nail-gun-tool-concrete-nail-gun-portable-mini-nail-shooting-machine</loc>
-  <lastmod>2024-03-03T14:17:10+00:00</lastmod>
+  <lastmod>2024-03-05T12:15:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -339,7 +339,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/daily-life-hack/double-sided-multipurpose-removable-tape</loc>
-  <lastmod>2024-03-03T13:53:46+00:00</lastmod>
+  <lastmod>2024-03-05T15:16:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -384,7 +384,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/daily-life-hack/ice-ball-maker</loc>
-  <lastmod>2024-03-03T14:11:12+00:00</lastmod>
+  <lastmod>2024-03-05T12:27:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -519,7 +519,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/health-and-fitness/manual-neck-massager-for-neck-and-shoulder</loc>
-  <lastmod>2024-03-03T15:58:08+00:00</lastmod>
+  <lastmod>2024-03-05T15:14:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -544,7 +544,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/health-and-fitness/neck-and-shoulder-massager-with-heat-for-pain-relief</loc>
-  <lastmod>2024-03-03T15:59:58+00:00</lastmod>
+  <lastmod>2024-03-05T14:25:48+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -565,6 +565,11 @@
 <url>
   <loc>https://rareosphere.com/categories/home-improvement-gadgets/led-solar-light-outdoor-rechargeable-waterproof-decorative-pathway-lights-for-home</loc>
   <lastmod>2024-03-03T19:24:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rareosphere.com/categories/home-improvement-gadgets/floor-spin-mop-and-bucket-set-with-wringer-system-extended-stainless-steel-handle</loc>
+  <lastmod>2024-03-03T16:16:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -789,12 +794,12 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kitchen-accessories/rotating-kitchen-baskets-fruit-and-vegetable-storage</loc>
-  <lastmod>2024-03-04T04:07:40+00:00</lastmod>
+  <lastmod>2024-03-05T12:28:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kitchen-accessories/reusable-stainless-steel-drinking-spoon-straws</loc>
-  <lastmod>2024-03-04T04:05:48+00:00</lastmod>
+  <lastmod>2024-03-05T12:24:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -809,7 +814,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kitchen-accessories/eco-friendly-bags-mirage-compostable-cling-transparent-foil-wrap-easy-to-use</loc>
-  <lastmod>2024-03-03T21:05:34+00:00</lastmod>
+  <lastmod>2024-03-05T12:19:29+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -839,7 +844,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kitchen-accessories/thumb-knife-finger-silicon-thumb-cutter</loc>
-  <lastmod>2024-03-04T04:15:52+00:00</lastmod>
+  <lastmod>2024-03-05T12:18:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -939,7 +944,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kitchen-accessories/4-in-1-handheld-portable-wireless-electric-vegetable-cutter</loc>
-  <lastmod>2024-03-03T20:51:52+00:00</lastmod>
+  <lastmod>2024-03-05T12:26:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1139,7 +1144,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/smart-tech/automatic-magnetic-self-stirring-coffee-mug-with-lid</loc>
-  <lastmod>2024-03-04T04:36:42+00:00</lastmod>
+  <lastmod>2024-03-05T12:21:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1169,7 +1174,7 @@
 </url>
 <url>
   <loc>https://rareosphere.com/categories/kids-and-babies/</loc>
-  <lastmod>2024-03-01T23:50:58+00:00</lastmod>
+  <lastmod>2024-03-05T10:40:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
