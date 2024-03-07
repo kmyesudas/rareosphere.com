@@ -1644,6 +1644,9 @@ video::-webkit-media-controls-panel {
         margin-top: 10px;
         margin-bottom: 35px;
       }
+      .thank_you_section .detail-box h1 {
+        font-size: x-large;
+      }
       
       .thank_you_section .detail-box .about-contact-link {
         display: inline-block;

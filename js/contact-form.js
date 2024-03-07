@@ -17,21 +17,29 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     if (!name) {
       nameWarning.textContent = 'Name is required';
       isValid = false;
+    } else {
+      nameWarning.textContent = ''; // Clear the warning message
     }
   
     if (!number) {
       numberWarning.textContent = 'Phone number is required';
       isValid = false;
+    } else {
+      numberWarning.textContent = ''; // Clear the warning message
     }
   
     if (!email) {
       emailWarning.textContent = 'Email is required';
       isValid = false;
+    } else {
+      emailWarning.textContent = ''; // Clear the warning message
     }
   
     if (!message) {
       messageWarning.textContent = 'Message is required';
       isValid = false;
+    } else {
+      messageWarning.textContent = ''; // Clear the warning message
     }
   
     if (!isValid) {
@@ -67,18 +75,51 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     );
   });
   
-  // Function to send automatic reply message to the user
-  function sendAutoReply(email) {
-    var autoReplyMessage = "Thank you for contacting Rareosphere - Smart Daily Essentials! We have received your message and will get back to you as soon as possible.";
-    
+      // Function to send automatic reply message to the user
+function sendAutoReply(email) {
+    // Construct the auto-reply email content
+    var autoReplyMessage = `
+      <html>
+      <head>
+        <style>
+          /* Add your styles here */
+          .container {
+            text-align: center;
+          }
+          .logo {
+            max-width: 150px;
+          }
+          .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <img src="https://rareosphere.com/assets/Rareosphere Logo.png" alt="Rareosphere Logo" class="logo">
+          <h1>Thank you for contacting us!</h1>
+          <p>We have received your message and will get back to you as soon as possible.</p>
+          <a href="https://rareosphere.com/" class="button">Visit Our Website</a>
+        </div>
+      </body>
+      </html>
+    `;
+  
+    // Send the auto-reply email
     Email.send({
-      Host : "smtp.elasticemail.com",
-      Username : "rareosphere@gmail.com",
-      Password : "D433A7C5161D3BD69A4A269BBEF2003FB445",
+      Host: "smtp.elasticemail.com",
+      Username: "rareosphere@gmail.com",
+      Password: "D433A7C5161D3BD69A4A269BBEF2003FB445",
       To: email,
-      From: 'rareosphere@gmail.com', // Change this to your email address
+      From: 'Rareosphere <rareosphere@gmail.com>', // Change this to your email address
       Subject: 'Automatic Reply: Contact Form Submission',
-      Body: autoReplyMessage
+      Body: autoReplyMessage,
+      ContentType: "text/html"
     });
   }
   
@@ -96,3 +137,16 @@ document.getElementById('contactForm').addEventListener('submit', function (even
       }, 1000);
     }, 5000);
   }
+  
+  // Function to hide warning messages when input is detected
+  function hideWarningMessage(inputElement, warningElement) {
+    inputElement.addEventListener('input', function () {
+      warningElement.textContent = ''; // Clear the warning message when input is detected
+    });
+  }
+  
+  // Hide warning messages for all input fields
+  hideWarningMessage(document.getElementById('nameInput'), document.getElementById('nameWarning'));
+  hideWarningMessage(document.getElementById('numberInput'), document.getElementById('numberWarning'));
+  hideWarningMessage(document.getElementById('emailInput'), document.getElementById('emailWarning'));
+  hideWarningMessage(document.getElementById('messageInput'), document.getElementById('messageWarning'));
