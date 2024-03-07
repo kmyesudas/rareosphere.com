@@ -677,27 +677,9 @@ a:focus {
   color: #6bb7be;
 }
 
-.contact_section .map_container {
-  height: 500px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  padding: 0;
-}
-
-.contact_section .map_container .map {
-  height: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.contact_section .map_container .map #googleMap {
-  height: 100%;
+.contact_section .img-box img{
+  width: 100%;
+  height: auto;
 }
 
 .info_section {
@@ -1562,8 +1544,73 @@ video::-webkit-media-controls-panel {
             -moz-appearance: none;
         }
         
+
+    /* Contact form styling */
+
         .google-translate{
           display: flex;
           justify-content: end;
           padding-right: 20px;
         }
+
+        .contact-container {
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #f9f9f9;
+        }
+    
+        .contact-form input,
+        .contact-form textarea {
+          width: calc(100% - 22px);
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+    
+        .contact-form textarea {
+          height: 100px;
+          width: 100%;
+        }
+    
+        .contact-form button {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 3px;
+          background-color: #007bff;
+          color: #fff;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+    
+        .contact-form button:hover {
+          background-color: #0056b3;
+        }
+    
+        .warning-message {
+          color: red;
+          font-size: 12px;
+          margin-top: -15px;
+          margin-bottom: 10px;
+        }
+    
+      /* Popup styles */
+      .popup {
+        position: relative;
+        margin-top: 10px;
+        color: #4CAF50;
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 1000;
+        text-align: center;
+        transition: opacity 0.5s;
+      }
+    
+      .popup-error {
+        background-color: #f44336; /* Red */
+      }
