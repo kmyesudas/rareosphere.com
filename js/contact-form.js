@@ -104,7 +104,7 @@ function sendAutoReply(email) {
           <img src="https://rareosphere.com/assets/rareosphere-logo.png" alt="Rareosphere Logo" class="logo">
           <h1>Thank you for contacting us!</h1>
           <p>We have received your message and will get back to you as soon as possible.</p>
-          <a href="https://rareosphere.com/" class="button">Visit Our Website</a>
+          <a href="https://rareosphere.com/?utm_source=mail-cta" class="button">Visit Our Website</a>
         </div>
       </body>
       </html>
