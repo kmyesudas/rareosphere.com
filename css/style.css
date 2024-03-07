@@ -1614,3 +1614,50 @@ video::-webkit-media-controls-panel {
       .popup-error {
         background-color: #f44336; /* Red */
       }
+
+
+      /* Thank you section */
+
+      .thank_you_section .row {
+        background-color: #ffffff;
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      /* .thank_you_section .row {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } */
+      
+      .thank_you_section .img-box img {
+        width: 60%;
+        display: flex !; 
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .thank_you_section .detail-box p {
+        margin-top: 10px;
+        margin-bottom: 35px;
+      }
+      
+      .thank_you_section .detail-box .about-contact-link {
+        display: inline-block;
+        padding: 10px 45px;
+        background-color: #6bb7be;
+        color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #6bb7be;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+      }
+      
+      .thank_you_section .detail-box a:hover {
+        background-color: transparent;
+        color: #6bb7be;
+      }
+      

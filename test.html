@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+/* Basic styles for the form */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Popup styles */
+.popup {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form id="contactForm">
+    <div>
+      <input type="text" id="nameInput" placeholder="Your Name">
+      <div id="nameWarning" class="warning"></div>
+    </div>
+    <div>
+      <input type="text" id="numberInput" placeholder="Phone Number">
+      <div id="numberWarning" class="warning"></div>
+    </div>
+    <div>
+      <input type="email" id="emailInput" placeholder="Email">
+      <div id="emailWarning" class="warning"></div>
+    </div>
+    <div>
+      <textarea id="messageInput" placeholder="Message"></textarea>
+      <div id="messageWarning" class="warning"></div>
+    </div>
+    <button type="submit">SEND</button>
+  </form>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent default form submission
+  
+  // Fetch form values
+  var name = document.getElementById('nameInput').value;
+  var number = document.getElementById('numberInput').value;
+  var email = document.getElementById('emailInput').value;
+  var message = document.getElementById('messageInput').value;
+  
+  // Validate form inputs
+  var nameWarning = document.getElementById('nameWarning');
+  var numberWarning = document.getElementById('numberWarning');
+  var emailWarning = document.getElementById('emailWarning');
+  var messageWarning = document.getElementById('messageWarning');
+  var isValid = true;
+
+  if (!name) {
+    nameWarning.textContent = 'Name is required';
+    isValid = false;
+  }
+
+  if (!number) {
+    numberWarning.textContent = 'Phone number is required';
+    isValid = false;
+  }
+
+  if (!email) {
+    emailWarning.textContent = 'Email is required';
+    isValid = false;
+  }
+
+  if (!message) {
+    messageWarning.textContent = 'Message is required';
+    isValid = false;
+  }
+
+  if (!isValid) {
+    return;
+  }
+
+  // Construct the email message
+  var fullMessage = "Name: " + name + "\n";
+  fullMessage += "Phone Number: " + number + "\n";
+  fullMessage += "Email: " + email + "\n\n";
+  fullMessage += "Message: \n" + message;
+
+  // Send email using SMTPJS
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "rareosphere@gmail.com",
+    Password : "D433A7C5161D3BD69A4A269BBEF2003FB445",
+    To: 'rareosphere@gmail.com', // Change this to your recipient email address
+    From: "rareosphere@gmail.com",
+    Subject: 'Contact Form Submission',
+    Body: fullMessage
+  }).then(
+    function () {
+      // Send automatic reply message to the user
+      sendAutoReply(email);
+      // Redirect to thank-you page
+      window.location.href = 'thank-you.html';
+    },
+    function (error) {
+      // Show error popup
+      showPopup('Message failed to send. Error: ' + error, 'error');
+    }
+  );
+});
+
+// Function to send automatic reply message to the user
+function sendAutoReply(email) {
+  var autoReplyMessage = "Thank you for contacting Rareosphere - Smart Daily Essentials! We have received your message and will get back to you as soon as possible.";
+  
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "rareosphere@gmail.com",
+    Password : "D433A7C5161D3BD69A4A269BBEF2003FB445",
+    To: email,
+    From: 'rareosphere@gmail.com', // Change this to your email address
+    Subject: 'Automatic Reply: Contact Form Submission',
+    Body: autoReplyMessage
+  });
+}
+
+// Function to show popup message above the submit button
+function showPopup(message, type) {
+  var popup = document.createElement('div');
+  popup.classList.add('popup', 'popup-' + type);
+  popup.textContent = message;
+  document.body.appendChild(popup);
+  // Hide popup after 5 seconds
+  setTimeout(function () {
+    popup.style.opacity = '0';
+    setTimeout(function () {
+      document.body.removeChild(popup);
+    }, 1000);
+  }, 5000);
+}
+</script>
+
+</body>
+</html>
