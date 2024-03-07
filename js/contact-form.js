@@ -59,7 +59,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
       Password : "D433A7C5161D3BD69A4A269BBEF2003FB445",
       To: 'rareosphere@gmail.com', // Change this to your recipient email address
       From: "rareosphere@gmail.com",
-      Subject: 'Contact Form Submission',
+      Subject: 'New Contact Form Submission at Rareosphere',
       Body: fullMessage
     }).then(
       function () {
@@ -87,7 +87,7 @@ function sendAutoReply(email) {
             text-align: center;
           }
           .logo {
-            max-width: 150px;
+            width: 70%;
           }
           .button {
             display: inline-block;
@@ -117,7 +117,7 @@ function sendAutoReply(email) {
       Password: "D433A7C5161D3BD69A4A269BBEF2003FB445",
       To: email,
       From: 'Rareosphere <rareosphere@gmail.com>', // Change this to your email address
-      Subject: 'Automatic Reply: Contact Form Submission',
+      Subject: 'Thank You For Contacting Rareosphere - Smart Daily Essentials',
       Body: autoReplyMessage,
       ContentType: "text/html"
     });
