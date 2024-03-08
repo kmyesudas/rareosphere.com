@@ -1263,9 +1263,9 @@ video::-webkit-media-controls-panel {
 }
 
 .best-sellers:hover {
-  background-color: transparent;
-  color: #f89646;
-  border: solid 1px #6bb7be;
+  background-color: #6bb7be;
+  color: #ffffff;
+  border: solid 1px #f8964e;
 }
 
 .best-sellers:focus {
