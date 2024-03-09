@@ -1038,6 +1038,7 @@ video::-webkit-media-controls-panel {
   text-align: center;
 }
 
+
 .glow-on-hover {
   /* width: 220px;
   height: 50px; */
@@ -1676,3 +1677,9 @@ video::-webkit-media-controls-panel {
         color: #6bb7be;
       }
       
+
+      /* Product review section */
+
+      .product_review_section{
+       padding: 30px;
+      }
