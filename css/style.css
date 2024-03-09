@@ -1683,3 +1683,6 @@ video::-webkit-media-controls-panel {
       .product_review_section{
        padding: 30px;
       }
+      .product_review_section h2{
+        font-size: x-large;
+      }
