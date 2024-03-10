@@ -9,7 +9,7 @@ body {
   padding: 80px 0;
 }
 
-.layout_padding2 {
+/* .layout_padding2 {
   padding: 45px 0;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .layout_padding-bottom {
   padding-bottom: 30px;
-}
+} */
 
 .long_section {
   margin-left: 45px;
@@ -1685,6 +1685,7 @@ video::-webkit-media-controls-panel {
       }
       .product_review_section h2, h3{
         font-size: x-large;
+        font-weight: bold;
         text-transform: uppercase;
         
       }
