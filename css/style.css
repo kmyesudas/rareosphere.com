@@ -1246,7 +1246,7 @@ video::-webkit-media-controls-panel {
 
 .best-sellers {
   width: 93%;
-  height: 50px;
+  padding: 10px;
   background-color: transparent;
   border-radius: 10px;
   border: solid 1px #f89646;
