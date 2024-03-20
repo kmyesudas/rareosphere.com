@@ -123,8 +123,8 @@ a:focus {
 }
 
 .custom_nav-container {
-  z-index: 1;
-  padding: 5px 20px;
+  z-index: 99;
+  padding: 0px 20px;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -1554,6 +1554,7 @@ video::-webkit-media-controls-panel {
           display: flex;
           justify-content: end;
           padding-right: 20px;
+          margin-top: -9px;
         }
 
         .contact-container {
