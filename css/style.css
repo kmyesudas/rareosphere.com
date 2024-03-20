@@ -1547,16 +1547,12 @@ video::-webkit-media-controls-panel {
             -moz-appearance: none;
         }
         
-
-    /* Contact form styling */
-
         .google-translate{
           display: flex;
           justify-content: end;
-          padding-right: 20px;
-          margin-top: -9px;
         }
 
+  /* Contact form styling */
         .contact-container {
           max-width: 400px;
           margin: 0 auto;

@@ -2,9 +2,9 @@
   .product-description {
     height: 6em;
   }
-  .slider_section {
-    padding-top: 90px;
-  }
+  /* .slider_section {
+    padding-top: 30px;
+  } */
 }
 
 @media (max-width: 1124px) {
@@ -12,7 +12,7 @@
     height: 6em;
   }
    .slider_section {
-    padding-top: 110px;
+    padding-top: 40px;
   }
   .info_section .info_post .post_box {
     justify-content: space-between;
@@ -46,29 +46,30 @@
   }
 
   .slider_section {
-    padding-top: 95px;
+    padding-top: 35px;
   }
   /* .carousel-indicators {
     display: none;
   } */
 
   .about_section{
-    margin-top: 100px;
+    margin-top: 45px;
   }
   .product_category_section{
-    margin-top: 100px;
+    margin-top: 40px;
   }
   /* .furniture_section{
     margin-top: 70px;
   } */
   .product_info_section{
-    margin-top: 90px;
+    margin-top: 40px;
   }
   .search_section{
-    margin-top: 70px;
+    margin-top: 20px;
   }
+  
   .contact_section{
-    margin-top: 70px;
+    margin-top: 10px;
   }
 
   .quote_btn-container {
@@ -109,9 +110,9 @@
     padding-right: 50px;
   }
 
-  .slider_section {
-    padding-top: 95px;
-  }
+  /* .slider_section {
+    padding-top: 20px;
+  } */
  
 
   .slider_section .detail_box {
@@ -205,7 +206,10 @@
 @media (max-width: 576px) {
  
   .slider_section {
-    padding-top: 50px;
+    padding-top: 10px;
+  }
+  .search_section h1{
+    font-size: large !important;
   }
 
   .info_section .info_links .info_links_menu {
@@ -344,14 +348,14 @@
   .container {
     max-width: 1170px;
   }
-  .slider_section {
-    padding-top: 90px;
-  }
+  /* .slider_section {
+    padding-top: 10px;
+  } */
   
 }
 @media (min-width: 992px) {
   /* .slider_section {
-    padding-top: 105px;
+    padding-top: 10px;
   } */
   .header_section{
     margin: 0;
@@ -360,24 +364,21 @@
     display: none;
   }
   .about_section{
-    margin-top: 120px;
+    margin-top: 40px;
   }
   .product_category_section{
-    margin-top: 110px;
+    margin-top: 40px;
   }
   /* .furniture_section{
     margin-top: 90px;
   } */
   .product_info_section{
-    margin-top: 100px;
+    margin-top: 40px;
   }
   .search_section{
-    margin-top: 90px;
+    margin-top: 20px;
   }
   .contact_section{
-    margin-top: 90px;
-  }
-  .google-translate{
-    margin-top: -25px;
+    margin-top: 20px;
   }
 }
