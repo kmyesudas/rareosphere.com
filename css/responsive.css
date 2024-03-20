@@ -11,9 +11,9 @@
   .product-description {
     height: 6em;
   }
-   .slider_section {
+   /* .slider_section {
     padding-top: 40px;
-  }
+  } */
   .info_section .info_post .post_box {
     justify-content: space-between;
   
@@ -354,9 +354,9 @@
   
 }
 @media (min-width: 992px) {
-  /* .slider_section {
-    padding-top: 10px;
-  } */
+  .slider_section {
+    padding-top: 30px;
+  }
   .header_section{
     margin: 0;
   }
