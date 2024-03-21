@@ -11,7 +11,7 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 
-Redirect 301 https://rareosphere.com/categories/Bathroom-Accessories/(.*) https://rareosphere.com/categories/bathroom-accessories/lowercase($1)
+Redirect 301 /Bathroom-Accessories/(.*) https://rareosphere.com/
 Redirect 301 https://rareosphere.com/categories/Bike-and-Car-Gadgets/(.*) https://rareosphere.com/categories/bike-and-car-gadgets/lowercase($1)
 Redirect 301 https://rareosphere.com/categories/Daily-Life-Hack/(.*) https://rareosphere.com/categories/daily-life-hack/lowercase($1)
 Redirect 301 https://rareosphere.com/categories/Health-and-Fitness/(.*) https://rareosphere.com/categories/health-and-fitness/lowercase($1)
