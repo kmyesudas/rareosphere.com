@@ -10,23 +10,11 @@ RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-
+ErrorDocument 404 https://rareosphere.com/ 
 
 Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
+Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/Ladies-Products/electric-hair-straightener-brush
+Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/Ladies-Products/trifold-lighted-vanity-makeup-mirror
 
-RewriteEngine On
 
-# Convert folder names to lowercase
-RewriteRule ^categories/Ladies-Products/([^/]+)/?$ /categories/ladies-products/$1 [R=301,L,NC]
 
-# Convert file names to lowercase
-RewriteCond %{REQUEST_URI} !^/categories/ladies-products/ [NC]
-RewriteCond %{REQUEST_URI} ^/categories/Ladies-Products/ [NC]
-RewriteRule ^categories/Ladies-Products/(.*)$ /categories/ladies-products/$1 [R=301,L,NC]
-
-# Redirect from uppercase to lowercase for the entire /Ladies-Products/ folder
-RewriteRule ^(.*)$ /$1 [L,NE]
-
-# Rewrite to lowercase
-RewriteMap  lc int:tolower
-RewriteRule  [A-Z] ${lc:$0} [R=301,L]
