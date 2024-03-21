@@ -11,8 +11,6 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 
-ErrorDocument 404 https://rareosphere.com/
-
 Redirect 301 /Bathroom-Accessories/(.*) /bathroom-accessories/lowercase($1)
 Redirect 301 /Bike-and-Car-Gadgets/(.*) /bike-and-car-gadgets/lowercase($1)
 Redirect 301 /Daily-Life-Hack/(.*) /daily-life-hack/lowercase($1)
