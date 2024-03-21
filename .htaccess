@@ -14,5 +14,10 @@ Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categorie
 Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/ladies-products/electric-hair-straightener-brush
 Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/ladies-products/trifold-lighted-vanity-makeup-mirror
 Redirect 301 /categories/Health-and-Fitness/automatic-rebound-abdominal-wheel /categories/health-and-fitness/automatic-rebound-abdominal-wheel
+Redirect 301 /categories/Kitchen-Accessories/Professional-4-In-1-Stainless-Steel-Watermelon-Cutter-Fruit-Carving-Tools-Set /categories/kitchen-accessories/professional-4-in-1-stainless-steel-watermelon-cutter-fruit-carving-tools-set
+Redirect 301 /categories/Smart-Tech/Vacuum-Mobile-Holder /categories/smart-tech/vacuum-mobile-holder
+Redirect 301 /categories/Daily-Life-Hack/2-in-1-Portable-Laundry-Rolling-Soap-Box /categories/daily-life-hack/2-in-1-portable-laundry-rolling-soap-box
+Redirect 301 /categories/Kids-and-Babies/EPP-Foam-RC-Aircraft-Fighter-with-LED-Light /categories/kids-and-babies/epp-foam-rc-aircraft-fighter-with-led-light
+Redirect 301 /categories/Smart-Tech/Automatic-Magnetic-Self-Stirring-Coffee-Mug-with-Lid /categories/smart-tech/automatic-magnetic-self-stirring-coffee-mug-with-lid
 
 ErrorDocument 404 https://rareosphere.com/ 
