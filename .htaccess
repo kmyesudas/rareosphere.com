@@ -10,11 +10,10 @@ RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-ErrorDocument 404 https://rareosphere.com/ 
-
 Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
 Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/Ladies-Products/electric-hair-straightener-brush
 Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/Ladies-Products/trifold-lighted-vanity-makeup-mirror
+Redirect 301 categories/Health-and-Fitness/automatic-rebound-abdominal-wheel categories/health-and-fitness/automatic-rebound-abdominal-wheel
 
-
+ErrorDocument 404 https://rareosphere.com/ 
 
