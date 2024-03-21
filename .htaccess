@@ -11,14 +11,5 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 
-Redirect 301 /Bathroom-Accessories/ https://rareosphere.com/
-Redirect 301 https://rareosphere.com/categories/Bike-and-Car-Gadgets/(.*) https://rareosphere.com/categories/bike-and-car-gadgets/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Daily-Life-Hack/(.*) https://rareosphere.com/categories/daily-life-hack/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Health-and-Fitness/(.*) https://rareosphere.com/categories/health-and-fitness/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Home-Improvement-Gadgets/(.*) https://rareosphere.com/categories/home-improvement-gadgets/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Home-Office-Decor/(.*) https://rareosphere.com/categories/home-office-decor/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Kids-and-Babies/(.*) https://rareosphere.com/categories/kids-and-babies/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Kitchen-Accessories/(.*) https://rareosphere.com/categories/kitchen-accessories/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Ladies-Products/(.*) https://rareosphere.com/categories/ladies-products/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Smart-Tech/(.*) https://rareosphere.com/categories/smart-tech/lowercase($1)
-Redirect 301 https://rareosphere.com/categories/Home-Office-Decor/3d-removable-wall-stickers https://rareosphere.com/categories/home-office-decor/3d-removable-wall-stickers
+
+Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
