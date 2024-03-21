@@ -16,6 +16,6 @@ Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categorie
 
 
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/categories/Home-Office-Decor/(.*)$ [NC]
-RewriteRule ^(.+)$ /categories/home-office-decor/$1 [L,R=301]
+RewriteCond %{REQUEST_URI} ^/categories/Home-Office-Decor/(.+)$ [NC]
+RewriteRule ^/categories/Home-Office-Decor/(.+)$ /categories/home-office-decor/$1 [L,R=301]
 
