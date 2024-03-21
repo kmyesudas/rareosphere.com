@@ -11,13 +11,13 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 
-Redirect 301 /Bathroom-Accessories/(.*) /bathroom-accessories/lowercase($1)
-Redirect 301 /Bike-and-Car-Gadgets/(.*) /bike-and-car-gadgets/lowercase($1)
-Redirect 301 /Daily-Life-Hack/(.*) /daily-life-hack/lowercase($1)
-Redirect 301 /Health-and-Fitness/(.*) /health-and-fitness/lowercase($1)
-Redirect 301 /Home-Improvement-Gadgets/(.*) /home-improvement-gadgets/lowercase($1)
-Redirect 301 /Home-Office-Decor/(.*) /home-office-decor/lowercase($1)
-Redirect 301 /Kids-and-Babies/(.*) /kids-and-babies/lowercase($1)
-Redirect 301 /Kitchen-Accessories/(.*) /kitchen-accessories/lowercase($1)
-Redirect 301 /Ladies-Products/(.*) /ladies-products/lowercase($1)
-Redirect 301 /Smart-Tech/(.*) /smart-tech/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Bathroom-Accessories/(.*) https://rareosphere.com/categories/bathroom-accessories/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Bike-and-Car-Gadgets/(.*) https://rareosphere.com/categories/bike-and-car-gadgets/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Daily-Life-Hack/(.*) https://rareosphere.com/categories/daily-life-hack/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Health-and-Fitness/(.*) https://rareosphere.com/categories/health-and-fitness/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Home-Improvement-Gadgets/(.*) https://rareosphere.com/categories/home-improvement-gadgets/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Home-Office-Decor/(.*) https://rareosphere.com/categories/home-office-decor/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Kids-and-Babies/(.*) https://rareosphere.com/categories/kids-and-babies/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Kitchen-Accessories/(.*) https://rareosphere.com/categories/kitchen-accessories/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Ladies-Products/(.*) https://rareosphere.com/categories/ladies-products/lowercase($1)
+Redirect 301 https://rareosphere.com/categories/Smart-Tech/(.*) https://rareosphere.com/categories/smart-tech/lowercase($1)
