@@ -16,5 +16,4 @@ Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categorie
 
 RewriteEngine On
 RewriteCond %{REQUEST_URI} ^/categories/Ladies-Products/(.*)$ [NC]
-RewriteRule ^(.+)$ /categories/ladies-products/$1 [L,R=301]
-
+RewriteRule ^/categories/(Ladies-Products)/(.+)$ /categories/ladies-products/$2 [L,R=301]
