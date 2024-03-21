@@ -14,6 +14,7 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
 
-Redirect 301 /categories/Bike-and-Car-Gadgets/(.*) /categories/bike-and-car-gadgets/lowercase($1)
-Redirect 301 /categories/Daily-Life-Hack/(.*) /categories/daily-life-hack/lowercase($1)
-Redirect 301 /categories/Health-and-Fitness/(.*) /categories/health-and-fitness/lowercase($1)
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/categories/Health-and-Fitness/(.*)$ [NC]
+RewriteRule ^(.+)$ /categories/health-and-fitness/$1 [L,R=301]
