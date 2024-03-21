@@ -17,10 +17,12 @@ Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categorie
 RewriteEngine On
 
 # Convert URL to lowercase for URLs within /Ladies-Products/ folder
-RewriteCond %{REQUEST_URI} !^/categories/ladies-products/ [NC]
 RewriteCond %{REQUEST_URI} ^/categories/Ladies-Products/ [NC]
-RewriteRule ^(.*)$ /categories/ladies-products%{REQUEST_URI} [R=301,L,NE]
+RewriteRule ^categories/Ladies-Products/(.*)$ /categories/ladies-products/$1 [R=301,L,NC]
 
 # Redirect from uppercase to lowercase for the entire /Ladies-Products/ folder
-RewriteRule ^categories/Ladies-Products/(.*)$ /categories/ladies-products/$1 [R=301,L]
+RewriteRule ^(.*)$ /$1 [L,NE]
 
+# Rewrite to lowercase
+RewriteMap  lc int:tolower
+RewriteRule  [A-Z] ${lc:$0} [R=301,L]
