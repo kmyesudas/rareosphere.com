@@ -182,6 +182,6 @@ Redirect 301 /categories/Daily-Life-Hack/Automatic-Tape-Dispenser /categories/da
 Redirect 301 /categories/Daily-Life-Hack/Waterproof-Foldable-Large-Capacity-Beam-Mouth-Bag /categories/daily-life-hack/waterproof-foldable-large-capacity-beam-mouth-bag
 Redirect 301 /categories/Home-Office-Decor/magic-growing-crystal-christmas-tree /categories/home-office-decor/magic-growing-crystal-christmas-tree
 Redirect 301 /categories/Home-Office-Decor/Magnetic-Levitation-Led-Floating-Moon-Lamp /categories/home-office-decor/magnetic-levitation-led-floating-moon-lamp
+Redirect 301 /categories/Bathroom-Accessories/toilet-seat-lifter-handle-clip /categories/bathroom-accessories/toilet-seat-lifter-handle-clip
 
-
-ErrorDocument 404 https://rareosphere.com/ https://rareosphere.com/categories/Bathroom-Accessories/toilet-seat-lifter-handle-clip https://rareosphere.com/categories/bathroom-accessories/toilet-seat-lifter-handle-clip
+ErrorDocument 404 https://rareosphere.com/ 
