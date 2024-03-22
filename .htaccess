@@ -2,13 +2,13 @@ RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
-RewriteEngine on
+RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 Redirect 301 /categories/Bathroom-Accessories/ /categories/bathroom-accessories/
 Redirect 301 /categories/Home-Office-Decor/ /categories/home-office-decor/
