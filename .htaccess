@@ -2,6 +2,7 @@ RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
+RewriteEngine on
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
