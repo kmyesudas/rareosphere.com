@@ -1,13 +1,12 @@
 RewriteEngine on
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
 
-RewriteEngine On
+# Force HTTPS and remove www (if applicable)
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{REQUEST_FILENAME}.html -f
+# Rewrite URLs without .html extension (if file exists without .html)
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 Redirect 301 /categories/Bathroom-Accessories/ /categories/bathroom-accessories/
