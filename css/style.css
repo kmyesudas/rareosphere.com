@@ -1343,7 +1343,7 @@ video::-webkit-media-controls-panel {
 }
 
 /* Blog section*/
-/* .blog_section .heading_container {
+.blog_section .heading_container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1439,9 +1439,9 @@ video::-webkit-media-controls-panel {
 /* .blog_info_section .detail-box p {
   margin-top: 10px;
   margin-bottom: 35px;
-} */
+}
 
-/* .blog_info_section .detail-box .about-contact-link {
+.blog_info_section .detail-box .about-contact-link {
   display: inline-block;
   padding: 10px 45px;
   background-color: #6bb7be;
@@ -1455,7 +1455,7 @@ video::-webkit-media-controls-panel {
 .blog_info_section .detail-box a:hover {
   background-color: transparent;
   color: #6bb7be;
-} */
+}
 
 
 /* Product card Search button Styles */
