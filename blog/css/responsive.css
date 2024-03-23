@@ -55,6 +55,12 @@
     .about_section{
       margin-top: 45px;
     }
+    .blog_info_section{
+      margin-top: 40px;
+    }
+    .blog_section{
+      margin-top: 40px;
+    }
     .product_category_section{
       margin-top: 40px;
     }
@@ -351,9 +357,17 @@
     /* .slider_section {
       padding-top: 10px;
     } */
+    .info_section .info_post .post_box {
+      justify-content: space-between;
+    
+    }
     
   }
   @media (min-width: 992px) {
+    .info_section .info_post .post_box {
+      justify-content: space-between;
+    
+    }
     .slider_section {
       padding-top: 30px;
     }
@@ -364,6 +378,12 @@
       display: none;
     }
     .about_section{
+      margin-top: 40px;
+    }
+    .blog_info_section{
+      margin-top: 40px;
+    }
+    .blog_section{
       margin-top: 40px;
     }
     .product_category_section{
