@@ -1414,14 +1414,14 @@ video::-webkit-media-controls-panel {
 } */
 
 /* Blog info section */
-/* .blog_info_section {
+.blog_info_section {
   background-color: #f9fafa;
 }
 
 .blog_info_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: start;
 }
 
 .blog_info_section .img-box img {
@@ -1435,8 +1435,8 @@ video::-webkit-media-controls-panel {
 }
 .blog_info_section .img-card img{
   width: 100%;
-} */
-/* .blog_info_section .detail-box p {
+}
+.blog_info_section .detail-box p {
   margin-top: 10px;
   margin-bottom: 35px;
 }
@@ -1455,6 +1455,43 @@ video::-webkit-media-controls-panel {
 .blog_info_section .detail-box a:hover {
   background-color: transparent;
   color: #6bb7be;
+}
+
+
+/* Related Blogs Styling */
+
+/* Sticky sidebar */
+.blog_info_section #sticky-sidebar {
+position: -webkit-sticky;
+position: sticky;
+top: 20px; /* Adjust as needed */
+}
+
+.related_blogs {
+padding-top: 10px;
+margin-bottom: 20px;
+overflow: hidden; /* Clearfix */
+}
+
+.related_blogs img {
+float: left;
+margin-right: 10px;
+width: 100px; /* Increased image size */
+height: auto; /* Maintain aspect ratio */
+}
+
+.blog-info {
+overflow: hidden;
+}
+
+.blog-info h4 {
+margin: 0; /* Remove default margins */
+font-size: 18px; /* Reduced font size for title */
+}
+
+.related_blogs p {
+margin: 0; /* Remove default margins */
+font-size: 12px; /* Reduced font size for date */
 }
 
 

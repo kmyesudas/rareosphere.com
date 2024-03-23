@@ -66,9 +66,10 @@
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles  -->
-  <link href="https://rareosphere.com/css/style.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="https://rareosphere.com/css/responsive.css" rel="stylesheet" />
+  <link href="./css/responsive.css" rel="stylesheet" />
+  <script src="./js/blog_section.js" defer></script> 
 
 </head>
 
@@ -89,9 +90,9 @@
         <div class="col-md-12">
           <div class="heading_container">
             <p></p>
-            <h2>
+            <h1>
               Unleashing the Magic of Knowledge: Exploring Amazon Kindle E-Readers
-            </h2>
+            </h1>
             <b>Posted : October, 25, 2023</b>
           </div>
         </div>
@@ -197,44 +198,43 @@
           <p></p>
     
         </div>
-        <div class="col-md-4">
-          <div class="col-md-4">
-            <!-- Tag Clouds Section -->
-            <div class="tag-clouds">
-                <h2>Tag Clouds</h2>
-                <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">AI</a></li>
-                    <li><a href="#">Machine Learning</a></li>
-                    <!-- Add more tags as needed -->
-                </ul>
-            </div>
-        
-            <!-- Related Blogs Section -->
-            <div class="related-blogs">
-                <h2>Related Blogs</h2>
-                <div class="blog">
-                    <img src="blog1.jpg" alt="Blog 1" />
-                    <div class="blog-info">
-                        <h3><a href="#">Title of Blog 1</a></h3>
-                        <p>Published Date: <span>March 22, 2024</span></p>
+       
+        <div class="col-md-4" id="sticky-sidebar">
+          <!-- Related Blogs Section -->
+          <div class="related_blogs_section">
+              <h2>Related Blogs</h2>
+              <div class="related_blogs">
+                  <img src="https://rareosphere.s3.ap-south-1.amazonaws.com/blog/Amazon+Kindle+E-Readers.jpg" alt="Blog 1" />
+                  <div class="blog-info">
+                      <h4><a href="#">Unleashing the Magic of Knowledge: Exploring Amazon Kindle E-Readers</a></h4>
                     </div>
-                </div>
-                <div class="blog">
-                    <img src="blog2.jpg" alt="Blog 2" />
-                    <div class="blog-info">
-                        <h3><a href="#">Title of Blog 2</a></h3>
-                        <p>Published Date: <span>March 20, 2024</span></p>
+                    <p>Published Date: <span><strong>March 20, 2024</strong></span></p>
+              </div>
+              <div class="related_blogs">
+                  <img src="https://rareosphere.s3.ap-south-1.amazonaws.com/blog/Amazon+Handmade.jpg" alt="Blog 2" />
+                  <div class="blog-info">
+                      <h4><a href="#">A Guide to Amazon Handmade: Unique and Artisanal Finds</a></h4>
                     </div>
-                </div>
-                <!-- Add more related blogs as needed -->
-            </div>
-        </div>
-        
-        </div>
-
+                    <p>Published Date: <span><strong>March 20, 2024</strong></span></p>
+              </div>
+              <div class="related_blogs">
+                  <img src="https://rareosphere.s3.ap-south-1.amazonaws.com/blog/Fitness-and-Wellness.jpg" alt="Blog 3" />
+                  <div class="blog-info">
+                      <h4><a href="#">Healthy Living with Amazon: Fitness and Wellness Products</a></h4>
+                    </div>
+                    <p>Published Date: <span><strong>March 20, 2024</strong></span></p>
+              </div>
+              <div class="related_blogs">
+                  <img src="https://rareosphere.s3.ap-south-1.amazonaws.com/blog/McAfee+Total+Protection2024.jpg" alt="Blog 3" />
+                  <div class="blog-info">
+                      <h4><a href="#">Exploring the Features of McAfee Total Protection 2024</a></h4>
+                    </div>
+                    <p>Published Date: <span><strong>March 20, 2024</strong></span></p>
+              </div>
+              <!-- Add more related blogs as needed -->
+          </div>
+      </div>
+      
       
      </div>
     </div>
@@ -253,12 +253,22 @@
   </div>
   <p></p>
 
-   
+  
   <!-- end blog section -->
 
 
   <div id="footer-placeholder"></div>
+  <script>
+    // Scroll buttons functionality
+document.querySelector('.left-btn').addEventListener('click', function() {
+    document.querySelector('.trending-slider').scrollLeft -= 300;
+});
 
+document.querySelector('.right-btn').addEventListener('click', function() {
+    document.querySelector('.trending-slider').scrollLeft += 300;
+});
+
+  </script> 
 </body>
 
 </html>
