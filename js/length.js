@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var titleText = titleElement.textContent;
 
     if (titleText.length > maxCharacters) {
-      titleElement.textContent = titleText.substring(0, maxCharacters) + '[...]';
+      titleElement.textContent = titleText.substring(0, maxCharacters) + '[read more...]';
     }
   });
 });
