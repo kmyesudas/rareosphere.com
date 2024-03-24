@@ -1005,6 +1005,12 @@ a:focus {
   width: 100%;
   height: auto;
 }
+/* Sticky sidebar */
+.product_info_section #info-sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* Adjust as needed */
+  }
 
 /* Hide default video controls */
 video::-webkit-media-controls {
