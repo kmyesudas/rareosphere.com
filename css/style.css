@@ -1027,11 +1027,6 @@ video::-webkit-media-controls-panel {
   justify-content: center;
   text-align: center;
 }
-.product_info_section #sticky-sidebar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px; /* Adjust as needed */
-  }
 
 
 .glow-on-hover {
@@ -1469,7 +1464,7 @@ video::-webkit-media-controls-panel {
 /* Related Blogs Styling */
 
 /* Sticky sidebar */
-.blog_info_section #sticky-sidebar {
+#sticky-sidebar {
 position: -webkit-sticky;
 position: sticky;
 top: 20px; /* Adjust as needed */
