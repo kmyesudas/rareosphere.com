@@ -361,6 +361,11 @@
     justify-content: space-between;
   
   }
+  .header_section .nav-link{
+    font-size: 15px !important;
+    margin: 14px 14px !important;
+    
+  }
   
 }
 @media (min-width: 992px) {
@@ -377,6 +382,11 @@
   .header_section .search-link{
     display: none;
   }
+  .header_section .nav-link{
+    font-size: 10px;
+    margin: 10px 10px !important;
+  }
+  
   .about_section{
     margin-top: 40px;
   }

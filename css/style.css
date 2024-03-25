@@ -894,7 +894,7 @@ a:focus {
 @media only screen and (min-width: 768px) {
   .footer_section {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 20px 40px;
   }
@@ -1591,11 +1591,11 @@ color: #000;
             border-radius: 4px; /* Rounded corners */
             padding: 5px; /* Padding */
             font-family: Arial, sans-serif; /* Font family */
-            font-size: 14px; /* Font size */
+            font-size: 13px; /* Font size */
             color: #000000; /* Text color */
-            appearance: none; /* Remove default appearance */
+            /* appearance: none; 
             -webkit-appearance: none;
-            -moz-appearance: none;
+            -moz-appearance: none; */
         }
         
         .google-translate{
