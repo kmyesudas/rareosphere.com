@@ -10,16 +10,16 @@ RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-Redirect 301 https://rareosphere.com/categories/Bathroom-Accessories/ https://rareosphere.com/categories/bathroom-accessories/
-Redirect 301 https://rareosphere.com/categories/Home-Office-Decor/ https://rareosphere.com/categories/home-office-decor/
-Redirect 301 https://rareosphere.com/categories/Kitchen-Accessories/ https://rareosphere.com/categories/kitchen-accessories/
-Redirect 301 https://rareosphere.com/categories/Smart-Tech/ https://rareosphere.com/electronic-gadgets/
-Redirect 301 https://rareosphere.com/categories/Daily-Life-Hack/ https://rareosphere.com/categories/daily-life-hack/
-Redirect 301 https://rareosphere.com/categories/Kids-and-Babies/ https://rareosphere.com/kids-and-babies-care/
-Redirect 301 https://rareosphere.com/categories/Ladies-Products/ https://rareosphere.com/beauty-and-personal-care/
-Redirect 301 https://rareosphere.com/categories/Home-Improvement-Gadgets/ https://rareosphere.com/smart-home/
-Redirect 301 https://rareosphere.com/categories/Health-and-Fitness/ https://rareosphere.com/categories/health-and-fitness/
-Redirect 301 https://rareosphere.com/categories/Bike-and-Car-Gadgets/ https://rareosphere.com/categories/bike-and-car-gadgets/
+Redirect 301 /categories/Bathroom-Accessories/ /categories/bathroom-accessories/
+Redirect 301 /categories/Home-Office-Decor/ /categories/home-office-decor/
+Redirect 301 /categories/Kitchen-Accessories/ /categories/kitchen-accessories/
+Redirect 301 /categories/Smart-Tech/ /categories/smart-tech/
+Redirect 301 /categories/Daily-Life-Hack/ /categories/daily-life-hack/
+Redirect 301 /categories/Kids-and-Babies/ /categories/kids-and-babies/
+Redirect 301 /categories/Ladies-Products/ /categories/ladies-products/
+Redirect 301 /categories/Home-Improvement-Gadgets/ /categories/home-improvement-gadgets/
+Redirect 301 /categories/Health-and-Fitness/ /categories/health-and-fitness/
+Redirect 301 /categories/Bike-and-Car-Gadgets/ /categories/bike-and-car-gadgets/
 Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
 Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/ladies-products/electric-hair-straightener-brush
 Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/ladies-products/trifold-lighted-vanity-makeup-mirror
