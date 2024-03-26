@@ -484,19 +484,13 @@ a:focus {
 
 .product_category_section .box .detail-box {
   padding: 10px;
+  background-color: #ffffff;
 }
-.product_category_section .box .detail-box:hover {
-  padding: 10px;
-  background-color: #000;
-  color: #ffffff;
-}
-.product_category_section .box .detail-box a {
-  background-color: transparent;
+.product_category_section a {
   color: #000000;
 }
-.product_category_section .box .detail-box a:hover {
-  background-color: #000;
-  color: #ffffff;
+.product_category_section a:hover {
+  color: red;
 }
 
 .product_category_section .box .detail-box h5 {
