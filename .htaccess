@@ -13,11 +13,11 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 Redirect 301 /categories/Bathroom-Accessories/ /categories/bathroom-accessories/
 Redirect 301 /categories/Home-Office-Decor/ /categories/home-office-decor/
 Redirect 301 /categories/Kitchen-Accessories/ /categories/kitchen-accessories/
-Redirect 301 /categories/Smart-Tech/ /categories/smart-tech/
+Redirect 301 /categories/Smart-Tech/ /electronic-gadgets/
 Redirect 301 /categories/Daily-Life-Hack/ /categories/daily-life-hack/
-Redirect 301 /categories/Kids-and-Babies/ /categories/kids-and-babies/
-Redirect 301 /categories/Ladies-Products/ /categories/ladies-products/
-Redirect 301 /categories/Home-Improvement-Gadgets/ /categories/home-improvement-gadgets/
+Redirect 301 /categories/Kids-and-Babies/ /kids-and-babies-care/
+Redirect 301 /categories/Ladies-Products/ /beauty-and-personal-care/
+Redirect 301 /categories/Home-Improvement-Gadgets/ /smart-home/
 Redirect 301 /categories/Health-and-Fitness/ /categories/health-and-fitness/
 Redirect 301 /categories/Bike-and-Car-Gadgets/ /categories/bike-and-car-gadgets/
 Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers

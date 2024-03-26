@@ -511,8 +511,8 @@ a:focus {
 
 .view-collections-button:hover {
   background-color: transparent;
-  color: #f7fafa;
-  font-weight: bold;
+  color: #f7fafa !important;
+  font-weight: bold !important;
 }
 
 
@@ -934,7 +934,7 @@ a:focus {
   text-align: center;
   border: none;
   outline: none;
-  color: #fff;
+  color: #fff !important;
   background: #111;
   cursor: pointer;
   position: relative;
