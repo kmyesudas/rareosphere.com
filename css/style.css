@@ -513,14 +513,14 @@ a:focus {
   font-weight: bold;
 }
 
-.product_category_section a {
+/* .product_category_section a {
   background-color: transparent;
   color: #000000;
 }
 .product_category_section a:hover {
   background-color: transparent;
   color: #ba1616;
-}
+} */
 
 .client_section .heading_container {
   -webkit-box-align: center;
