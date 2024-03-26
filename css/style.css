@@ -485,6 +485,11 @@ a:focus {
 .product_category_section .box .detail-box {
   padding: 10px;
 }
+.product_category_section .box .detail-box:hover {
+  padding: 10px;
+  background-color: #000;
+  color: #ffffff;
+}
 
 .product_category_section .box .detail-box h5 {
   font-weight: bold;
@@ -508,10 +513,13 @@ a:focus {
   font-weight: bold;
 }
 
-.product_category_section .all-collections-main a:hover {
+.product_category_section a {
   background-color: transparent;
-  color: #f7fafa;
-  font-weight: bold;
+  color: #000000;
+}
+.product_category_section a:hover {
+  background-color: transparent;
+  color: #ba1616;
 }
 
 .client_section .heading_container {
