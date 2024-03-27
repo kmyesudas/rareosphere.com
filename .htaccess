@@ -10,6 +10,7 @@ RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
+RewriteRule ^categories/home-office-decor/$ https://rareosphere.com/home-office-decor/ [R=301,L]
 Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
 Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/ladies-products/electric-hair-straightener-brush
 Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/ladies-products/trifold-lighted-vanity-makeup-mirror
