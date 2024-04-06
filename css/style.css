@@ -892,7 +892,7 @@ a:focus {
   color: #f89646;
 }
 .copyright, .developer {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1017,7 +1017,7 @@ a:focus {
   
 }
 .product_info_section h4{
-  font-size: large;
+  font-size: larger;
 }
 
 /* Sticky sidebar */
@@ -1055,6 +1055,27 @@ video::-webkit-media-controls-panel {
   text-align: center;
 }
 
+.popup-footer {
+  position: fixed;
+  bottom: -100px; /* Hide initially */
+  text-align: end;
+  right: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 10px 10px;
+  transition: bottom 0.3s ease;
+  z-index: 9999;
+  
+}
+
+.popup-footer.show {
+  bottom: 0;
+}
+.popup-footer .glow-on-hover p {
+  font-size: 10px;
+  padding: 0 30px;
+  margin: 0;
+}
 
 .glow-on-hover {
   /* width: 220px;
