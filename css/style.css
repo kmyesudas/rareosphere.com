@@ -1722,7 +1722,7 @@ color: #000;
 
       /* Product review section */
 
-      .product_review_section{
+      /* .product_review_section{
        padding: 30px;
       }
       .product_review_section h2, h3{
@@ -1730,4 +1730,78 @@ color: #000;
         font-weight: bold;
         text-transform: uppercase;
         
+      } */
+
+      .product_review_section img{
+        width: 100%;
+        height: auto;
+        padding: 8px 0;
+        }
+        .product_review_section h2 {
+        text-transform: capitalize !important;
+        font-size: larger;
+        font-weight: bold;
+        padding: 5px 0;
+        }
+        .product_review_section h3 {
+        text-transform: capitalize !important;
+        font-size: larger;
+        font-weight: bold;
+        padding: 5px 0;
+        }
+
+        /* product images show section */
+        
+      .main-image img {
+        max-width: 100%; /* Ensure the main image fills its container */
+        height: auto;
       }
+      
+      .small-images {
+        display: flex;
+        flex-direction: column; /* Display small images vertically */
+      }
+      
+      .small-image {
+        width: 80px; /* Adjust size of small images */
+        margin-bottom: 10px; /* Adjust spacing between small images */
+        cursor: pointer;
+      }
+      
+      /* Add hover effect on small images */
+      .small-image:hover {
+        opacity: 0.7; /* Adjust opacity as desired */
+      }
+      
+      /* Add active state for the selected small image */
+      .small-image.active {
+        border: 2px solid blue; /* Add border or any other styling to indicate active state */
+      }
+      
+      @media (max-width: 767px) {
+        .col-sm-4 {
+          width: 25%;
+        }
+        .col-sm-8 {
+          width: 75%;
+        }
+      
+        .small-images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      
+        .small-image {
+          width: 100%;
+          max-width: 100px; /* Adjust size of small images */
+          margin: 5px; /* Adjust spacing between small images */
+        }
+      
+        .main-image {
+          width: 100%;
+         
+        }
+      }
+    
+    
