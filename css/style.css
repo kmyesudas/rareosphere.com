@@ -1733,9 +1733,12 @@ color: #000;
       } */
 
       .product_review_section img{
-        width: 100%;
+        width: 70%;
         height: auto;
         padding: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         }
         .product_review_section h2 {
         text-transform: capitalize !important;
@@ -1751,7 +1754,7 @@ color: #000;
         }
 
         /* product images show section */
-        
+
       .main-image img {
         max-width: 100%; /* Ensure the main image fills its container */
         height: auto;
