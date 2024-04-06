@@ -1722,33 +1722,28 @@ color: #000;
 
       /* Product review section */
 
-      /* .product_review_section{
+      .product_review_section{
        padding: 30px;
       }
-      .product_review_section h2, h3{
-        font-size: x-large;
+      .product_review_section h1{
+        font-size: larger;
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: capitalize;
         
-      } */
+      }
 
       .product_review_section img{
         max-width: 100%;
         height: auto;
         padding: 8px 0;
         }
-        .product_review_section h2 {
+        .product_review_section h2,h3 {
         text-transform: capitalize !important;
         font-size: larger;
         font-weight: bold;
         padding: 5px 0;
         }
-        .product_review_section h3 {
-        text-transform: capitalize !important;
-        font-size: larger;
-        font-weight: bold;
-        padding: 5px 0;
-        }
+        
 
         /* product images show section */
 
