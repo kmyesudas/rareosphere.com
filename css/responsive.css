@@ -218,6 +218,13 @@
     font-size: large !important;
   }
 
+  .product_info_section h1{
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+  }
+
   .info_section .info_links .info_links_menu {
     margin-bottom: 35px;
   }
