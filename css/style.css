@@ -1005,10 +1005,18 @@ a:focus {
 }
 
 /* Product info section */
-.product_info_section .img-box img {
+/* .product_info_section .img-box img {
   width: 100%;
   height: auto;
+} */
+
+.product_info_section h1{
+  font-size: larger;
+  font-weight: bold;
+  text-transform: capitalize;
+  
 }
+
 /* Sticky sidebar */
 .product_info_section #info-sticky-sidebar {
   position: -webkit-sticky;
@@ -1030,8 +1038,14 @@ video::-webkit-media-controls-panel {
   /* margin-bottom: 35px; */
 }
 
-.product_info_section .buy-button,
-.amazon-disclosure {
+.product_info_section .buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: small;
+}
+.product_info_section .amazon-disclosure {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1725,13 +1739,7 @@ color: #000;
       .product_review_section{
        padding: 30px;
       }
-      .product_review_section h1{
-        font-size: larger;
-        font-weight: bold;
-        text-transform: capitalize;
-        
-      }
-
+      
       .product_review_section img{
         max-width: 100%;
         height: auto;
