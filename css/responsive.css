@@ -219,7 +219,7 @@
   }
 
   .product_info_section h1{
-    font-size: large;
+    font-size: large !important;
     font-weight: bold;
     text-transform: capitalize;
     
