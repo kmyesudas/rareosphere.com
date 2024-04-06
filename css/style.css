@@ -1005,10 +1005,10 @@ a:focus {
 }
 
 /* Product info section */
-/* .product_info_section .img-box img {
+.product_info_section .img-box img {
   width: 100%;
   height: auto;
-} */
+}
 
 .product_info_section h1{
   font-size: larger;
