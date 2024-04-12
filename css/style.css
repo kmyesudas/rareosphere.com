@@ -1291,11 +1291,22 @@ video::-webkit-media-controls-panel {
 
 .product-image {
   width: 100%;
-  height: auto;
+  height: 300px;
   /* border-radius: 10px; */
   object-fit: cover;
 }
 
+.product-image.hover-image {
+  display: none; /* Initially hide the hover image */
+}
+
+.product-link:hover .hover-image {
+  display: block; /* Show the hover image on hover */
+}
+
+.product-link:hover .default-image {
+  display: none; /* Hide the default image on hover */
+}
 .product-buy-button {
   width: 93%;
   height: 50px;
