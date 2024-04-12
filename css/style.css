@@ -237,7 +237,7 @@ display: none;
   /* Change scrollbar color */
   ::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
-    height: 7px;
+    height: 5px;
   }
 
   ::-webkit-scrollbar-track {
