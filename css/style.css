@@ -213,7 +213,7 @@ a:focus {
 }
 
 .navbar-2-nav .nav-link {
-  padding: 7px 15px; /* Adjust padding of each item */
+  padding: 8px 15px; /* Adjust padding of each item */
   color: #ffffff; /* Customize link color */
   font-weight: bold;
   font-size: 14px;
@@ -233,6 +233,7 @@ a:focus {
     white-space: nowrap; /* Prevent line breaks */
   }
 }
+
 
 
 
