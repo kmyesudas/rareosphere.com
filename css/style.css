@@ -196,8 +196,25 @@ a:focus {
 }
 
 /* Hide the scrollbar */
-.navbar-2-nav.flex-nowrap::-webkit-scrollbar {
-  display: none;
+/* .navbar-2-nav.flex-nowrap::-webkit-scrollbar {
+  display: flex;
+} */
+
+.navbar-nav.flex-nowrap::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.navbar-nav.flex-nowrap::-webkit-scrollbar-track {
+  background: #37217f; /* Track color */
+}
+
+.navbar-nav.flex-nowrap::-webkit-scrollbar-thumb {
+  background: #b32020; /* Thumb color */
+  border-radius: 6px; /* Radius of the thumb */
+}
+
+.navbar-nav.flex-nowrap::-webkit-scrollbar-thumb:hover {
+  background: #1ba829; /* Thumb color on hover */
 }
 
 .navbar-2-nav {
@@ -209,11 +226,12 @@ a:focus {
 }
 
 .navbar-2-nav .nav-item {
-  margin-right: 15px; /* Adjust spacing between items */
+  margin-right: 10px; /* Adjust spacing between items */
+
 }
 
 .navbar-2-nav .nav-link {
-  padding: 8px 15px; /* Adjust padding of each item */
+  padding: 5px 10px; /* Adjust padding of each item */
   color: #ffffff; /* Customize link color */
   font-weight: bold;
   font-size: 14px;
