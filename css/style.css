@@ -197,25 +197,8 @@ a:focus {
 
 /* Hide the scrollbar */
 /* .navbar-2-nav.flex-nowrap::-webkit-scrollbar {
-  display: flex;
+display: none;
 } */
-
-.navbar-nav.flex-nowrap::-webkit-scrollbar {
-  width: 5px; /* Width of the scrollbar */
-}
-
-.navbar-nav.flex-nowrap::-webkit-scrollbar-track {
-  background: #37217f; /* Track color */
-}
-
-.navbar-nav.flex-nowrap::-webkit-scrollbar-thumb {
-  background: #b32020; /* Thumb color */
-  border-radius: 6px; /* Radius of the thumb */
-}
-
-.navbar-nav.flex-nowrap::-webkit-scrollbar-thumb:hover {
-  background: #1ba829; /* Thumb color on hover */
-}
 
 .navbar-2-nav {
   display: flex;
@@ -231,7 +214,7 @@ a:focus {
 }
 
 .navbar-2-nav .nav-link {
-  padding: 5px 10px; /* Adjust padding of each item */
+  padding: 10px 10px; /* Adjust padding of each item */
   color: #ffffff; /* Customize link color */
   font-weight: bold;
   font-size: 14px;
@@ -244,15 +227,32 @@ a:focus {
 }
 
 /* Ensure horizontal scrolling on small devices */
-@media (max-width: 990px) {
+
   .navbar-2-nav.flex-nowrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     white-space: nowrap; /* Prevent line breaks */
   }
-}
 
+  /* Change scrollbar color */
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 7px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: #ffffff; /* Color of the scrollbar track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #971010; /* Color of the scrollbar thumb on hover */
+  }
+/* End Navbar Category section */
 
 
 .quote_btn-container {
