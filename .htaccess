@@ -1,18 +1,26 @@
 <IfModule mod_headers.c>
     # Set Cache-Control, Pragma, and Expires headers for CSS and JavaScript files
-    <FilesMatch "\.(css|js|html)$">
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
-        Header set Pragma "no-cache"
-        Header set Expires "0"
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public"
+        Header set Pragma "cache"
+        Header set Expires "max-age=172800" # Two days (2 * 24 * 3600 seconds)
     </FilesMatch>
 
-    # Set Cache-Control, Pragma, and Expires headers for other file types (e.g., HTML, PHP)
+    # Set Cache-Control, Pragma, and Expires headers for HTML files
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public"
+        Header set Pragma "cache"
+        Header set Expires "max-age=172800" # Two days (2 * 24 * 3600 seconds)
+    </FilesMatch>
+
+    # Set Cache-Control, Pragma, and Expires headers for images
     <FilesMatch "\.(jpg|jpeg|png|webp)$">
         Header set Cache-Control "public"
         Header set Pragma "cache"
-        Header set Expires "max-age=604800" # Adjust the max-age value as needed (in seconds)
+        Header set Expires "max-age=2592000" # One month (30 * 24 * 3600 seconds)
     </FilesMatch>
 </IfModule>
+
 
 RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
