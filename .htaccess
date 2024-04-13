@@ -187,3 +187,9 @@ Redirect 301 /categories/Bathroom-Accessories/toilet-seat-lifter-handle-clip /ca
 Redirect 301 /categories/Home-Office-Decor/Metal-Balance-Eagle-with-Eiffel-Tower /categories/home-office-decor/metal-balance-eagle-with-eiffel-tower
 
 ErrorDocument 404 https://rareosphere.com/ 
+
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
