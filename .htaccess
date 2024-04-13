@@ -1,13 +1,13 @@
 <IfModule mod_headers.c>
     # Set Cache-Control, Pragma, and Expires headers for CSS and JavaScript files
-    <FilesMatch "\.(css|js)$">
+    <FilesMatch "\.(css|js|html)$">
         Header set Cache-Control "no-cache, no-store, must-revalidate"
         Header set Pragma "no-cache"
         Header set Expires "0"
     </FilesMatch>
 
     # Set Cache-Control, Pragma, and Expires headers for other file types (e.g., HTML, PHP)
-    <FilesMatch "\.(html|jpg|jpeg|png|webp)$">
+    <FilesMatch "\.(jpg|jpeg|png|webp)$">
         Header set Cache-Control "public"
         Header set Pragma "cache"
         Header set Expires "max-age=604800" # Adjust the max-age value as needed (in seconds)
