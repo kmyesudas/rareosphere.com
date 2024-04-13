@@ -1,3 +1,9 @@
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
 RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
@@ -188,8 +194,4 @@ Redirect 301 /categories/Home-Office-Decor/Metal-Balance-Eagle-with-Eiffel-Tower
 
 ErrorDocument 404 https://rareosphere.com/ 
 
-<FilesMatch "\.(html|htm)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires "0"
-</FilesMatch>
+
