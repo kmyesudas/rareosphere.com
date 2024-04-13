@@ -1269,7 +1269,7 @@ video::-webkit-media-controls-panel {
 
 .product-card:hover {
   transform: scale(1.03);
-  /* font-weight: bold; */
+  font-weight: bold;
   -webkit-box-shadow: 0 0 15px 0 rgba(121, 101, 101, 0.9);
   box-shadow: 0 0 15px 0 rgba(118, 103, 103, 0.9);
 }
