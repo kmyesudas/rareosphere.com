@@ -1909,3 +1909,39 @@ color: #000;
         }
       }
     
+/* 404 error section */
+.error_section{
+  margin-top: 70px;
+}
+
+.error_section .error-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-img img {
+  height: 50vh;
+  padding: 20px;
+  max-width: 100%;
+  border-radius: 30px;
+}
+.error-img a {
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  margin-top: -10px;
+  background-color: #000;
+  color: #ffffff;
+  border: solid 2px;
+  border-color: #000;
+  width: 305px;
+  border-radius: 10px;
+}
+.error-img a:hover {
+  background-color: #ffffff;
+  color: #000;
+  border: solid 2px;
+  border-color: #000;
+}
