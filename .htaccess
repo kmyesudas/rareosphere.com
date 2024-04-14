@@ -190,6 +190,6 @@ Redirect 301 /categories/Home-Office-Decor/Magnetic-Levitation-Led-Floating-Moon
 Redirect 301 /categories/Bathroom-Accessories/toilet-seat-lifter-handle-clip /categories/bathroom-accessories/toilet-seat-lifter-handle-clip
 Redirect 301 /categories/Home-Office-Decor/Metal-Balance-Eagle-with-Eiffel-Tower /categories/home-office-decor/metal-balance-eagle-with-eiffel-tower
 
-ErrorDocument 404 /page-not-found/ 
+ErrorDocument 404 https://rareosphere.com/page-not-found 
 
 
