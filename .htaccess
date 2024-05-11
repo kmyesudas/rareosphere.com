@@ -11,16 +11,6 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)\.min\.css$ $1.css [L]
-RewriteRule ^(.+)\.css$ minify.php?type=css&file=$1 [L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)\.min\.js$ $1.js [L]
-RewriteRule ^(.+)\.js$ minify.php?type=js&file=$1 [L]
-
-
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
