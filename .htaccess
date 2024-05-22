@@ -21,9 +21,9 @@ RewriteRule ^categories/kitchen-accessories/$ https://rareosphere.com/kitchen-ac
 RewriteRule ^categories/ladies-products/$ https://rareosphere.com/beauty-and-personal-care/ [R=301,L]
 RewriteRule ^categories/smart-tech/$ https://rareosphere.com/electronic-gadgets/ [R=301,L]
 RewriteRule ^categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers [R=301,L]
-Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/ladies-products/electric-hair-straightener-brush
-Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/ladies-products/trifold-lighted-vanity-makeup-mirror
-Redirect 301 /categories/Health-and-Fitness/automatic-rebound-abdominal-wheel /categories/health-and-fitness/automatic-rebound-abdominal-wheel
+RewriteRule ^categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/ladies-products/electric-hair-straightener-brush
+RewriteRule ^categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/ladies-products/trifold-lighted-vanity-makeup-mirror
+RewriteRule ^categories/Health-and-Fitness/automatic-rebound-abdominal-wheel /categories/health-and-fitness/automatic-rebound-abdominal-wheel
 Redirect 301 /categories/Kitchen-Accessories/Professional-4-In-1-Stainless-Steel-Watermelon-Cutter-Fruit-Carving-Tools-Set /categories/kitchen-accessories/professional-4-in-1-stainless-steel-watermelon-cutter-fruit-carving-tools-set
 Redirect 301 /categories/Smart-Tech/Vacuum-Mobile-Holder /categories/smart-tech/vacuum-mobile-holder
 Redirect 301 /categories/Daily-Life-Hack/2-in-1-Portable-Laundry-Rolling-Soap-Box /categories/daily-life-hack/2-in-1-portable-laundry-rolling-soap-box
