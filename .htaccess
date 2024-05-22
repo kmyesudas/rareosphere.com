@@ -1,7 +1,3 @@
-<FilesMatch "\.(css|js)$">
-  Header set Cache-Control "max-age=172800"
-</FilesMatch>
-
 RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
@@ -24,7 +20,7 @@ RewriteRule ^categories/kids-and-babies/$ https://rareosphere.com/kids-and-babie
 RewriteRule ^categories/kitchen-accessories/$ https://rareosphere.com/kitchen-accessories/ [R=301,L]
 RewriteRule ^categories/ladies-products/$ https://rareosphere.com/beauty-and-personal-care/ [R=301,L]
 RewriteRule ^categories/smart-tech/$ https://rareosphere.com/electronic-gadgets/ [R=301,L]
-Redirect 301 /categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers
+RewriteRule ^categories/Home-Office-Decor/3d-removable-wall-stickers /categories/home-office-decor/3d-removable-wall-stickers [R=301,L]
 Redirect 301 /categories/Ladies-Products/Electric-Hair-Straightener-Brush /categories/ladies-products/electric-hair-straightener-brush
 Redirect 301 /categories/Ladies-Products/Trifold-Lighted-Vanity-Makeup-Mirror /categories/ladies-products/trifold-lighted-vanity-makeup-mirror
 Redirect 301 /categories/Health-and-Fitness/automatic-rebound-abdominal-wheel /categories/health-and-fitness/automatic-rebound-abdominal-wheel
