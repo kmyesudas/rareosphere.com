@@ -41,7 +41,7 @@ RewriteRule ^categories/Home-Office-Decor/16-Colors-Changing-Rose-Crystal-Diamon
 RewriteRule ^categories/Kitchen-Accessories/Electric-Mini-Fruit-Vegetable-Chopper$ https://rareosphere.com/categories/kitchen-accessories/electric-mini-fruit-vegetable-chopper [R=301,L]
 RewriteRule ^categories/Kitchen-Accessories/Egg-Holder-for-Refrigerator$ https://rareosphere.com/categories/kitchen-accessories/egg-holder-for-refrigerator [R=301,L]
 RewriteRule ^categories/Kitchen-Accessories/Thumb-Knife-Finger-Silicon-Thumb-Cutter$ https://rareosphere.com/categories/kitchen-accessories/thumb-knife-finger-silicon-thumb-cutter [R=301,L]
-RewriteRule ^categories/Smart-Tech/Magnetic-Levitation-Led-Floating-Moon-Lamp$ https://rareosphere.com/categories/smart-tech/magnetic-levitation-led-floating-moon-lamp [R=301,L] 
+RewriteRule ^categories/Smart-Tech/Magnetic-Levitation-Led-Floating-Moon-Lamp$ https://rareosphere.com/categories/home-office-decor/magnetic-levitation-led-floating-moon-lamp [R=301,L] 
 RewriteRule ^categories/Kitchen-Accessories/Microfiber-Cleaning-Cloths$ https://rareosphere.com/categories/kitchen-accessories/microfiber-cleaning-cloths [R=301,L]
 RewriteRule ^categories/Home-Improvement-Gadgets/shoe-rack-multi-layer-storage$ https://rareosphere.com/categories/home-improvement-gadgets/shoe-rack-multi-layer-storage [R=301,L]
 RewriteRule ^categories/Daily-Life-Hack/Clothes-Hanger-Wardrobe-Storage-Organizer-Rack$ https://rareosphere.com/categories/daily-life-hack/clothes-hanger-wardrobe-storage-organizer-rack [R=301,L]
@@ -196,6 +196,7 @@ RewriteRule ^contact$ https://rareosphere.com/contact-us [R=301,L]
 RewriteRule ^about$ https://rareosphere.com/about-us [R=301,L]
 RewriteRule ^categories/Bathroom-Accessories/$ https://rareosphere.com/bathroom-accessories/ [R=301,L]
 RewriteRule ^index$ https://rareosphere.com/ [R=301,L]
+RewriteRule ^categories/smart-tech/magnetic-levitation-led-floating-moon-lamp$ https://rareosphere.com/categories/home-office-decor/magnetic-levitation-led-floating-moon-lamp [R=301,L]
 
 ErrorDocument 404 https://rareosphere.com/page-not-found 
 
