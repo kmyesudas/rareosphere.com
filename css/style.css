@@ -1252,7 +1252,43 @@ video::-webkit-media-controls-panel {
 } */
 
 
-/* Product Card Styles */
+/* Main Product Card Styles */
+.product-card-main {
+  width: calc(50% - 20px);
+  /* Two columns in mobile view */
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  /* border: solid 1px;
+  border-color: #ffffff; */
+  -webkit-box-shadow: 0 0 10px 0 rgba(121, 101, 101, 0.5);
+  box-shadow: 0 0 10px 0 rgba(118, 103, 103, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: none;
+}
+
+.product-card-main:hover {
+  transform: scale(1.03);
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 15px 0 rgba(121, 101, 101, 0.9);
+  box-shadow: 0 0 15px 0 rgba(118, 103, 103, 0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .product-card-main {
+    width: calc(25% - 20px);
+    /* Four columns in desktop view */
+  }
+}
+
+@media (max-width: 359px) {
+  .product-card-main {
+    width: 100%;
+  }
+}
+
+/* Product card for Search an You may also like */
 .product-card {
   width: calc(50% - 20px);
   /* Two columns in mobile view */
@@ -1287,6 +1323,13 @@ video::-webkit-media-controls-panel {
   }
 }
 
+#load-more-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 .product-image {
   width: 100%;
