@@ -5,7 +5,7 @@ $(function(){
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const productsPerPage = 12;
+    const productsPerPage = 16;
     let currentPage = 1;
 
     const productCards = document.querySelectorAll(".product-card-main");
