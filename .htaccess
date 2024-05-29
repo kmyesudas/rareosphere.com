@@ -14,7 +14,9 @@ RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-RewriteRule ^index$ https://rareosphere.com/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/index$
+RewriteRule ^index$ / [R=301,L]
+
 RewriteRule ^categories/home-office-decor/$ https://rareosphere.com/home-office-decor/ [R=301,L]
 RewriteRule ^categories/bathroom-accessories/$ https://rareosphere.com/bathroom-accessories/ [R=301,L]
 RewriteRule ^categories/bike-and-car-gadgets/$ https://rareosphere.com/bike-and-car-gadgets/ [R=301,L]
