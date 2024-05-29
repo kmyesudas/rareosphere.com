@@ -11,9 +11,11 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
+RewriteEngine On
 RewriteCond %{REQUEST_URI} ^/index$
 RewriteRule ^index$ / [R=301,L]
 
