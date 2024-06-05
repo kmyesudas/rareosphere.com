@@ -1,5 +1,8 @@
 <FilesMatch "\.(css|js)$">
-  Header set Cache-Control "max-age=172800"
+  Header set Cache-Control "max-age=604800"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+        Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 RewriteEngine on
@@ -14,6 +17,7 @@ RewriteRule ^ https://rareosphere.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
+RewriteEngine On
 RewriteBase /
 RewriteCond %{THE_REQUEST} /index [NC]
 RewriteRule ^index$ https://rareosphere.com/ [R=301,L]
